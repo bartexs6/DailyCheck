@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DailyCheck.Views.CheckMarkPage"
+             xmlns:lottie="clr-namespace:Lottie.Forms;assembly=Lottie.Forms" xmlns:viewmodels="clr-namespace:DailyCheck.ViewModels">
+    <ContentPage.BindingContext>
+        <viewmodels:CheckMarkViewModel/>
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <StackLayout Margin="10,10,10,10" Grid.Row="1" >
+                <Label x:Name="CheckMarkName" Text="a" FontSize="Title" HorizontalTextAlignment="Center"></Label>
+                <Label  x:Name="CheckMarkDescription" Text="a" FontSize="Subtitle" HorizontalTextAlignment="Center"></Label>
+
+                <Grid>
+                    <lottie:AnimationView x:Name="lottieTick" Animation="58295-confetti.json" AutoPlay="false" ScaleX="2" ScaleY="2" WidthRequest="200" BackgroundColor="Transparent" HeightRequest="200" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"></lottie:AnimationView>
+                    <ImageButton x:Name="ButtonCheckMark"
+                        Source="TickMarkOff.png" 
+                        BackgroundColor="Transparent"
+                        Margin="0,50,0,0"
+                        WidthRequest="300"
+                        HeightRequest="300"
+                        FlexLayout.AlignSelf="Center"
+                        FlexLayout.Grow="1"
+                        Command="{Binding CheckMarkClicked}"
+                        Aspect="AspectFit">
+                    </ImageButton>
+                </Grid>
+            </StackLayout>
+            <AbsoluteLayout Grid.Row="0" HeightRequest="-1" >
+                <ImageButton AbsoluteLayout.LayoutBounds="0.95, 0, 25, 75"
+                        AbsoluteLayout.LayoutFlags="PositionProportional"
+                        Source="Edit.png" Aspect="AspectFit" 
+                             BackgroundColor="Transparent"
+                             Clicked="EditCheckMark_Button"/>
+                <ImageButton AbsoluteLayout.LayoutBounds="0.05, 0, 15, 75"
+                        AbsoluteLayout.LayoutFlags="PositionProportional"
+                        Source="Stats.png" Aspect="AspectFit" 
+                             BackgroundColor="Transparent"
+                             Clicked="CheckMarkMenu_Button"/>
+            </AbsoluteLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

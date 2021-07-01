@@ -1,0 +1,25 @@
+{
+  "version": 2,
+  "dgSpecHash": "os5h1Wf/kiuLqPanGJcf9hr7M9B6AHAS6OCbikG/ykRVwUJGocPrOFQOsX97JW6T5+1ygheFAYf81GwLEiMCHg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\PC\\source\\repos\\DailyCheck\\DailyCheck\\DailyCheck.iOS\\DailyCheck.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\PC\\.nuget\\packages\\com.airbnb.ios.lottie\\2.5.13\\com.airbnb.ios.lottie.2.5.13.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\com.airbnb.xamarin.forms.lottie\\4.0.9\\com.airbnb.xamarin.forms.lottie.4.0.9.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\sqlite-net-pcl\\1.7.335\\sqlite-net-pcl.1.7.335.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\sqlitepclraw.bundle_green\\2.0.3\\sqlitepclraw.bundle_green.2.0.3.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\sqlitepclraw.core\\2.0.3\\sqlitepclraw.core.2.0.3.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\sqlitepclraw.provider.dynamic_cdecl\\2.0.3\\sqlitepclraw.provider.dynamic_cdecl.2.0.3.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\syncfusion.licensing\\19.1.0.65\\syncfusion.licensing.19.1.0.65.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\syncfusion.xamarin.core\\19.1.0.65\\syncfusion.xamarin.core.19.1.0.65.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\syncfusion.xamarin.sfcalendar\\19.1.0.65\\syncfusion.xamarin.sfcalendar.19.1.0.65.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\system.buffers\\4.4.0\\system.buffers.4.4.0.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\xamarin.communitytoolkit\\1.1.0\\xamarin.communitytoolkit.1.1.0.nupkg.sha512",
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512"
+  ],
+  "logs": []
+}

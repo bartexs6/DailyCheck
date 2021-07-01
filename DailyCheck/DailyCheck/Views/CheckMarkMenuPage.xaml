@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+             x:Class="DailyCheck.Views.CheckMarkMenuPage">
+    <ContentPage.Content>
+        <Grid RowSpacing="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="6.26*"/>
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0" >
+                <Image Source="TopBar.png" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Aspect="AspectFill"></Image>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="2*"/>
+                        <ColumnDefinition Width="1*"/>
+
+                    </Grid.ColumnDefinitions>
+                    <ImageButton Grid.Column="0" Scale="0.2" Source="ExitArrow.png" BackgroundColor="Transparent" Clicked="Back_Button"></ImageButton>
+                    <Label Grid.Column="1" Text="Daily&#10;stats" TextColor="White" BackgroundColor="Transparent" FontSize="Title" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextTransform="Uppercase"></Label>
+                </Grid>
+            </Grid>
+            <StackLayout BackgroundColor="White" Grid.Row="1">
+            </StackLayout>
+
+            <AbsoluteLayout Grid.Row="1">
+                <Frame x:Name="CalendarButton" CornerRadius="10" BackgroundColor="White" AbsoluteLayout.LayoutBounds="0.5, -0.02, 0.7, 0.22"
+                        AbsoluteLayout.LayoutFlags="All" HasShadow="True" xct:ShadowEffect.OffsetY="3" xct:ShadowEffect.Radius="6" xct:ShadowEffect.Color="Black" xct:ShadowEffect.Opacity="0.3">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="2*"/>
+
+                        </Grid.ColumnDefinitions>
+                        
+                        <Image Grid.Column="0" Scale="0.6" Source="Calendar.jpg"/>
+                        <Label Grid.Column="1" Text="Calendar" TextColor="#16C60C" FontAttributes="Bold" BackgroundColor="Transparent" FontSize="26" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" TextTransform="Uppercase"></Label>
+                    </Grid>
+                </Frame>
+                <Frame CornerRadius="10" BackgroundColor="White" AbsoluteLayout.LayoutBounds="0.5, 0.38, 0.7, 0.22"
+                        AbsoluteLayout.LayoutFlags="All" HasShadow="True" xct:ShadowEffect.OffsetY="3" xct:ShadowEffect.Radius="6" xct:ShadowEffect.Color="Black" xct:ShadowEffect.Opacity="0.3">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="2*"/>
+
+                        </Grid.ColumnDefinitions>
+                        <Image Grid.Column="0" Scale="0.6" Source="Stats.jpg"/>
+                        <Label Grid.Column="1" Text="Progress" TextColor="#16C60C" FontAttributes="Bold" BackgroundColor="Transparent" FontSize="26" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" TextTransform="Uppercase"></Label>
+                    </Grid>
+                </Frame>
+                <Frame CornerRadius="10" BackgroundColor="White" AbsoluteLayout.LayoutBounds="0.5, 0.8, 0.7, 0.22"
+                        AbsoluteLayout.LayoutFlags="All" HasShadow="True" xct:ShadowEffect.OffsetY="3" xct:ShadowEffect.Radius="6" xct:ShadowEffect.Color="Black" xct:ShadowEffect.Opacity="0.3">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="2*"/>
+
+                        </Grid.ColumnDefinitions>
+                        <Image Grid.Column="0" Scale="0.6" Source="Settings.jpg"/>
+                        <Label Grid.Column="1" Text="Settings" TextColor="#16C60C" FontAttributes="Bold" BackgroundColor="Transparent" FontSize="26" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" TextTransform="Uppercase"></Label>
+                    </Grid>
+                </Frame>
+                <!--<Grid AbsoluteLayout.LayoutBounds="0.4, 0.165, 0.5, 0.2"
+                        AbsoluteLayout.LayoutFlags="All">
+                    <Label Grid.Row="0" TextColor="#16C60C" FontSize="Micro">Name</Label>
+                    <Entry Grid.Row="0" x:Name="CheckMarkNameInput" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+                    <Label Grid.Row="1" TextColor="#16C60C" FontSize="Micro">Description</Label>
+                    <Entry Grid.Row="1" x:Name="CheckMarkDescInput" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+                </Grid>
+                <Grid AbsoluteLayout.LayoutBounds="0.5, 0.55, 0.5, 0.26"
+                        AbsoluteLayout.LayoutFlags="All">
+                    <Button Grid.Row="0" CornerRadius="10" Text="EDIT" TextColor="white" Margin="0,0,0,10" BackgroundColor="#16C60C" VerticalOptions="CenterAndExpand" Clicked="EditButton_Clicked"></Button>
+                    <Button Grid.Row="1" CornerRadius="10" Text="DELETE" TextColor="white" Margin="0,0,0,10" BackgroundColor="#C50707" VerticalOptions="CenterAndExpand" Clicked="DeleteButton_Clicked"></Button>
+                    <Button Grid.Row="2" CornerRadius="10" Text="CONTINUE" TextColor="white" Margin="0,0,0,10" BackgroundColor="#0C93C6" VerticalOptions="CenterAndExpand" Clicked="ContinueButton_Clicked"></Button>
+                </Grid>-->
+
+            </AbsoluteLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

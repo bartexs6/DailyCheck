@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DailyCheck.Views.NewCheckMarkInputPage"
+             xmlns:xct="http://xamarin.com/schemas/2020/toolkit">
+    <ContentPage.Content>
+        
+        <Grid RowSpacing="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="6.26*"/>
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0" >
+                <Image Source="TopBar.png" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Aspect="AspectFill"></Image>
+                <Label Text="Add &#10; check mark" TextColor="White" BackgroundColor="Transparent" FontSize="Title" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextTransform="Uppercase"></Label>
+            </Grid>
+            <StackLayout BackgroundColor="White" Grid.Row="1">
+            </StackLayout>
+
+            <AbsoluteLayout Grid.Row="1">
+                <Frame CornerRadius="10" BackgroundColor="White" AbsoluteLayout.LayoutBounds="0.5, -0.07, 0.7, 0.8"
+                        AbsoluteLayout.LayoutFlags="All" HasShadow="True" xct:ShadowEffect.OffsetY="3" xct:ShadowEffect.Radius="6" xct:ShadowEffect.Color="Black" xct:ShadowEffect.Opacity="0.3">
+                    <Label Text="Add" TextColor="#16C60C" BackgroundColor="Transparent" FontAttributes="Bold" FontSize="32" HorizontalTextAlignment="Center" TextTransform="Uppercase"></Label>
+                </Frame>
+                <Grid AbsoluteLayout.LayoutBounds="0.4, 0.165, 0.5, 0.2"
+                        AbsoluteLayout.LayoutFlags="All">
+                    <Label Grid.Row="0" TextColor="#16C60C" FontSize="Micro">Name</Label>
+                    <Entry Grid.Row="0" x:Name="CheckMarkNameInput" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+                    <Label Grid.Row="1" TextColor="#16C60C" FontSize="Micro">Description</Label>
+                    <Entry Grid.Row="1" x:Name="CheckMarkDescInput" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+                </Grid>
+                <Grid AbsoluteLayout.LayoutBounds="0.5, 0.55, 0.5, 0.2"
+                        AbsoluteLayout.LayoutFlags="All">
+                    <Button Grid.Row="0" CornerRadius="10" Text="ADD" TextColor="white" Margin="0,0,0,16" BackgroundColor="#16C60C" VerticalOptions="CenterAndExpand" Clicked="AddButton_Clicked"></Button>
+                    <Button Grid.Row="1" CornerRadius="10" Text="EXIT" TextColor="white" Margin="0,0,0,16" BackgroundColor="#C50707" VerticalOptions="CenterAndExpand" Clicked="ExitButton_Clicked"></Button>
+                    <!--<BoxView HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" BackgroundColor="AntiqueWhite" ></BoxView>-->
+                </Grid>
+                <!-- <BoxView BackgroundColor="White" AbsoluteLayout.LayoutBounds="0.5, -0.05, 0.7, 0.8"
+                        AbsoluteLayout.LayoutFlags="All" CornerRadius="10" xct:ShadowEffect.OffsetY="3" xct:ShadowEffect.Radius="6" xct:ShadowEffect.Color="black" xct:ShadowEffect.Opacity="1"></BoxView>-->
+
+            </AbsoluteLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DailyCheck.Views.NewCheckMarkPage">
+    <ContentPage.Content>
+        <Grid>
+            <StackLayout Margin="10,100,10,10">
+                <Label Text="Add a new daily check!" FontSize="Title" HorizontalTextAlignment="Center"></Label>
+                <Label Text="Click the button below" FontSize="Subtitle" HorizontalTextAlignment="Center"></Label>
+
+                <ImageButton x:Name="AddNewTickButton"
+                    Source="AddTickMark.png" 
+                    BackgroundColor="Transparent"
+                    Margin="0,50,0,0"
+                    WidthRequest="300"
+                    HeightRequest="300"
+                    FlexLayout.AlignSelf="Center"
+                    FlexLayout.Grow="1"
+                    Clicked="AddNewTickMark_Clicked"
+                    Aspect="AspectFit">
+                </ImageButton>
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
