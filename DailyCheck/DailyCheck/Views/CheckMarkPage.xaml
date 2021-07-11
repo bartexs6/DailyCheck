@@ -1,25 +1,37 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="DailyCheck.Views.CheckMarkPage"
-             xmlns:lottie="clr-namespace:Lottie.Forms;assembly=Lottie.Forms" xmlns:viewmodels="clr-namespace:DailyCheck.ViewModels">
-    <ContentPage.BindingContext>
-        <viewmodels:CheckMarkViewModel/>
-    </ContentPage.BindingContext>
+             xmlns:lottie="clr-namespace:Lottie.Forms;assembly=Lottie.Forms" xmlns:viewmodels="clr-namespace:DailyCheck.ViewModels"
+             xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView">
     <ContentPage.Content>
-        
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+
             </Grid.RowDefinitions>
             <StackLayout Margin="10,10,10,10" Grid.Row="1" >
-                <Label x:Name="CheckMarkName" Text="a" FontSize="Title" HorizontalTextAlignment="Center"></Label>
-                <Label  x:Name="CheckMarkDescription" Text="a" FontSize="Subtitle" HorizontalTextAlignment="Center"></Label>
-
+                <Label x:Name="CheckMarkName" Text="{Binding CheckMark.Name}" FontSize="Title" HorizontalTextAlignment="Center"></Label>
+                <Label  x:Name="CheckMarkDescription" Text="{Binding CheckMark.Description}" FontSize="Subtitle" HorizontalTextAlignment="Center"></Label>
                 <Grid>
-                    <lottie:AnimationView x:Name="lottieTick" Animation="58295-confetti.json" AutoPlay="false" ScaleX="2" ScaleY="2" WidthRequest="200" BackgroundColor="Transparent" HeightRequest="200" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"></lottie:AnimationView>
+                    <lottie:AnimationView x:Name="lottieClicked" Animation="58295-confetti.json" AutoPlay="false" ScaleX="2" ScaleY="2" WidthRequest="200" BackgroundColor="Transparent" HeightRequest="200" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                        <lottie:AnimationView.Triggers>
+                            <MultiTrigger TargetType="lottie:AnimationView">
+                                <MultiTrigger.Conditions>
+                                    <BindingCondition Binding="{Binding PlayAnimation}" Value="True"/>
+                                </MultiTrigger.Conditions>
+                                <MultiTrigger.EnterActions>
+                                    <viewmodels:StartLottieAnimationTriggerAction />
+                                </MultiTrigger.EnterActions>
+                                <MultiTrigger.ExitActions>
+                                    <viewmodels:StopLottieAnimationTriggerAction />
+                                </MultiTrigger.ExitActions>
+                            </MultiTrigger>
+                        </lottie:AnimationView.Triggers>
+                    </lottie:AnimationView>
                     <ImageButton x:Name="ButtonCheckMark"
-                        Source="TickMarkOff.png" 
                         BackgroundColor="Transparent"
                         Margin="0,50,0,0"
                         WidthRequest="300"
@@ -28,6 +40,9 @@
                         FlexLayout.Grow="1"
                         Command="{Binding CheckMarkClicked}"
                         Aspect="AspectFit">
+                        <ImageButton.Source>
+                            <FileImageSource File="{Binding CheckMarkImage, Mode=TwoWay}" />
+                        </ImageButton.Source>
                     </ImageButton>
                 </Grid>
             </StackLayout>
@@ -36,13 +51,50 @@
                         AbsoluteLayout.LayoutFlags="PositionProportional"
                         Source="Edit.png" Aspect="AspectFit" 
                              BackgroundColor="Transparent"
-                             Clicked="EditCheckMark_Button"/>
+                             Command="{Binding EditCheckMarkClicked}"/>
                 <ImageButton AbsoluteLayout.LayoutBounds="0.05, 0, 15, 75"
                         AbsoluteLayout.LayoutFlags="PositionProportional"
                         Source="Stats.png" Aspect="AspectFit" 
                              BackgroundColor="Transparent"
-                             Clicked="CheckMarkMenu_Button"/>
+                             Command="{Binding CheckMarkMenuClicked}"/>
             </AbsoluteLayout>
+            <yummy:PancakeView BackgroundColor="#E1E1E1" Grid.Row="3" CornerRadius="20,20,0,0">
+                <Grid Margin="0,10,0,0" RowSpacing="100">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="2*"></ColumnDefinition>
+                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                        <ColumnDefinition Width="2*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <Frame Padding="0,0,0,0" Grid.Column="0" Grid.Row="0" Margin="30,0,30,0" BackgroundColor="Transparent">
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding CalendarClicked}" />
+                        </Frame.GestureRecognizers>
+                        <Grid>
+                            <Image Source="Calendar.png" Grid.Column="0"></Image>
+                            <Label Text="Calendar" HorizontalTextAlignment="Center" Grid.Column="0" Grid.Row="1"></Label>
+                        </Grid>
+                    </Frame>
+
+
+                    <Frame Padding="0,0,0,0" Grid.Column="1" Grid.Row="0" Margin="10,0,10,0" BackgroundColor="Transparent">
+                        <Grid>
+                            <Image Source="Stats.png" Grid.Column="0"></Image>
+                            <Label Text="Stats" HorizontalTextAlignment="Center"  Grid.Column="0" Grid.Row="1"></Label>
+                        </Grid>
+                    </Frame>
+
+                    <Frame Padding="0,0,0,0" Grid.Column="2" Grid.Row="0" Margin="30,0,30,0" BackgroundColor="Transparent">
+                        <Grid>
+                            <Image Source="Settings.png" Grid.Column="0"></Image>
+                            <Label Text="Settings" HorizontalTextAlignment="Center" Grid.Column="0" Grid.Row="1"></Label>
+                        </Grid>
+                    </Frame>
+                </Grid>
+            </yummy:PancakeView>
         </Grid>
     </ContentPage.Content>
 </ContentPage>

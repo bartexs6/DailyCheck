@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "os5h1Wf/kiuLqPanGJcf9hr7M9B6AHAS6OCbikG/ykRVwUJGocPrOFQOsX97JW6T5+1ygheFAYf81GwLEiMCHg==",
+  "dgSpecHash": "j9iTig/nsfapsKIakfndPokvPKpUdyjJ7cuw4vLjwoOk6ZG/oD9vWnMFjENcmaWO1i7OFC2vG+YLiofsZbyMcA==",
   "success": true,
   "projectFilePath": "C:\\Users\\PC\\source\\repos\\DailyCheck\\DailyCheck\\DailyCheck.iOS\\DailyCheck.iOS.csproj",
   "expectedPackageFiles": [
@@ -14,12 +14,14 @@
     "C:\\Users\\PC\\.nuget\\packages\\syncfusion.xamarin.core\\19.1.0.65\\syncfusion.xamarin.core.19.1.0.65.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\syncfusion.xamarin.sfcalendar\\19.1.0.65\\syncfusion.xamarin.sfcalendar.19.1.0.65.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\system.buffers\\4.4.0\\system.buffers.4.4.0.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\system.componentmodel\\4.3.0\\system.componentmodel.4.3.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\xamarin.communitytoolkit\\1.1.0\\xamarin.communitytoolkit.1.1.0.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512"
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\xamarin.forms.pancakeview\\2.3.0.759\\xamarin.forms.pancakeview.2.3.0.759.nupkg.sha512"
   ],
   "logs": []
 }

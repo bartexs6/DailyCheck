@@ -11,12 +11,26 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="ViewModels\CheckMarkCalndarViewModel.xaml.cs" />
+    <Compile Remove="ViewModels\CheckMarkCalndarViewModelDetail.xaml.cs" />
+    <Compile Remove="ViewModels\CheckMarkCalndarViewModelFlyout.xaml.cs" />
+    <Compile Remove="ViewModels\CheckMarkCalndarViewModelFlyoutMenuItem.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="ViewModels\CheckMarkCalndarViewModel.xaml" />
+    <EmbeddedResource Remove="ViewModels\CheckMarkCalndarViewModelDetail.xaml" />
+    <EmbeddedResource Remove="ViewModels\CheckMarkCalndarViewModelFlyout.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Com.Airbnb.Xamarin.Forms.Lottie" Version="4.0.9" />
     <PackageReference Include="sqlite-net-pcl" Version="1.7.335" />
     <PackageReference Include="Syncfusion.Xamarin.SfCalendar" Version="19.1.0.65" />
     <PackageReference Include="Xamarin.CommunityToolkit" Version="1.1.0" />
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />
     <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
+    <PackageReference Include="Xamarin.Forms.PancakeView" Version="2.3.0.759" />
   </ItemGroup>
 
   <ItemGroup>

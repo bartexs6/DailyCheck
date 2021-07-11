@@ -1,4 +1,5 @@
 ﻿using DailyCheck.Models;
+using DailyCheck.ViewModels;
 using SQLite;
 using Syncfusion.SfCalendar.XForms;
 using System;
@@ -20,42 +21,14 @@ namespace DailyCheck.Views
 		{
 			InitializeComponent();
 
-			if(checkMark != null)
-            {
-				this.checkMark = checkMark;
-            }
-            else
-            {
-				DisplayAlert("Error", "Ups... Something went wrong", "Ok");
-				return;
-			}
-
-			DateTime minDate = new DateTime(2021, 1, 1);
-			calendar.MinDate = minDate;
-			DateTime maxDate = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day);
-			calendar.MaxDate = maxDate;
-
-			using (SQLiteConnection conn = new SQLiteConnection(Constants.DatabasePath))
+			if (checkMark == null)
 			{
-				conn.CreateTable<DailyStats>();
-
-				List<DateTime> clicked_Dates = new List<DateTime>();
-                try
-                {
-					var stocks = conn.Query<DailyStats>("SELECT * FROM `DailyStats` WHERE `Name` = ?", this.checkMark.Name);
-					foreach (var i in stocks)
-					{
-						clicked_Dates.Add(new DateTime(i.Date.Year, i.Date.Month, i.Date.Day));
-					}
-                }
-                catch (Exception)
-                {
-                }
-
-				calendar.BlackoutDatesViewMode = BlackoutDatesViewMode.Stripes;
-				if(clicked_Dates.Count != 0) { 
-					calendar.BlackoutDates = clicked_Dates;
-				}
+				DisplayAlert("Error", "Ups... Something went wrong", "Ok");
+				this.Content = null;
+			}
+			else
+			{
+				BindingContext = new CheckMarkCalendarViewModel(checkMark);
 			}
 		}
 

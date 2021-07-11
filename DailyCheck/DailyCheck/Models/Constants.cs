@@ -25,5 +25,25 @@ namespace DailyCheck.Models
                 return Path.Combine(basePath, DatabaseFilename);
             }
         }
+
+        public enum MessageType
+        {
+            Info, Error
+        }
+
+        public static void SendMessage(string message, MessageType messageType = MessageType.Info)
+        {
+            switch (messageType)
+            {
+                case MessageType.Info:
+                    App.Current.MainPage.DisplayAlert("Info", message, "OK");
+                    break;
+                case MessageType.Error:
+                    App.Current.MainPage.DisplayAlert("Ups...", message, "OK");
+                    break;
+                default:
+                    break;
+            }
+        }
     }
 }

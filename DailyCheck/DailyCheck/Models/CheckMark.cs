@@ -1,4 +1,5 @@
-﻿using SQLite;
+﻿using DailyCheck.Views;
+using SQLite;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -17,66 +18,61 @@ namespace DailyCheck.Models
         public bool IsClicked { get => isClicked; set => isClicked = value; }
         public DateTime LastClickedDate { get => lastClickedDate; set => lastClickedDate = value; }
 
-        public CheckMark()
-        {
-        }
+        public CheckMark() { }
 
         public CheckMark(string name, string description)
         {
-            CheckMark newCheckMark = new CheckMark()
+            if (CheckMarkList.CheckDuplicate(name) == false)
             {
-                Name = name,
-                Description = description,
-                IsClicked = false
-            };
-
-            try
-            {
-                CheckMarkList.Add(newCheckMark);
+                try
+                {
+                    Name = name;
+                    Description = description;
+                    IsClicked = false;
+                    
+                    CheckMarkList.Add(this);
+                }
+                catch (ArgumentException error)
+                {
+                    Constants.SendMessage(error.Message, Constants.MessageType.Error);
+                    throw;
+                }
             }
-            catch (ArgumentException error)
+            else
             {
-                App.Current.MainPage.DisplayAlert("Ups...", error.Message, "OK");
-                throw;
+                Constants.SendMessage("There is other check mark with the same name");
             }
         }
 
-        public bool EditCheckMark(string name, string description)
+        public void EditCheckMark(string name, string description)
         {
+            if(name != Name)
+            {
+                if(CheckMarkList.CheckDuplicate(name) == true)
+                {
+                    Constants.SendMessage("There is other check mark with the same name");
+                    return;
+                }
+
+                using (SQLiteConnection conn = new SQLiteConnection(Constants.DatabasePath))
+                {
+                    const string command = "UPDATE `CheckMark` SET `Name`= ? WHERE `Name`= ?";
+                    conn.CreateCommand(command, new object[] { name, Name }).ExecuteNonQuery();
+
+                    const string command2 = "UPDATE `DailyStats` SET `Name`= ? WHERE `Name`= ?";
+                    conn.CreateCommand(command2, new object[] { name, Name }).ExecuteNonQuery();
+                }
+                Name = name;
+            }
             if (description != Description)
             {
                 using (SQLiteConnection conn = new SQLiteConnection(Constants.DatabasePath))
                 {
-                    conn.CreateTable<CheckMark>();
-
                     const string command = "UPDATE `CheckMark` SET `Description`= ? WHERE `Name`= ?";
                     conn.CreateCommand(command, new object[] { description, Name }).ExecuteNonQuery();
                 }
                 Description = description;
-
             }
-            if (name != Name)
-            {
-                if (CheckMarkList.CheckDuplicate(name) == true)
-                {
-                    return false;
-                }
-
-                using (SQLiteConnection conn = new SQLiteConnection(Constants.DatabasePath))
-                {
-                    conn.CreateTable<CheckMark>();
-
-                    const string command = "UPDATE `CheckMark` SET `Name`= ? WHERE `Name`= ?";
-                    conn.CreateCommand(command, new object[] { name, Name }).ExecuteNonQuery();
-                }
-                Name = name;
-            }
-
-            CheckMarkList.CheckMarks.Remove(this);
-            CheckMarkList.CheckMarks.Add(this);
-
-            return true;
-
         }
 
         public void SaveClick()
@@ -99,6 +95,7 @@ namespace DailyCheck.Models
             }
             catch (System.Exception)
             {
+                Constants.SendMessage("Database connection problem", Constants.MessageType.Error);
                 throw new System.ArgumentException("Database connection problem");
             }
 
@@ -124,7 +121,9 @@ namespace DailyCheck.Models
             }
             catch (System.Exception)
             {
-                throw new System.ArgumentException("Database connection problem");
+                Constants.SendMessage("Database connection problem", Constants.MessageType.Error);
+                //throw new System.ArgumentException("Database connection problem");
+                throw;
             }
         }
            

@@ -7,7 +7,7 @@
 .L.compressed_assembly_descriptors:
 	/* 0: DailyCheck.Android.dll */
 	/* uncompressed_file_size */
-	.long	411648
+	.long	457728
 	/* loaded */
 	.byte	0
 	/* data */
@@ -16,7 +16,7 @@
 
 	/* 1: DailyCheck.dll */
 	/* uncompressed_file_size */
-	.long	43008
+	.long	56320
 	/* loaded */
 	.byte	0
 	/* data */
@@ -61,7 +61,7 @@
 
 	/* 6: Mono.Android.dll */
 	/* uncompressed_file_size */
-	.long	2395648
+	.long	2398208
 	/* loaded */
 	.byte	0
 	/* data */
@@ -662,68 +662,77 @@
 	.zero	3
 	.long	compressed_assembly_data_72
 
-	/* 73: Xamarin.Forms.Platform.Android.dll */
+	/* 73: Xamarin.Forms.PancakeView.dll */
 	/* uncompressed_file_size */
-	.long	858112
+	.long	152064
 	/* loaded */
 	.byte	0
 	/* data */
 	.zero	3
 	.long	compressed_assembly_data_73
 
-	/* 74: Xamarin.Forms.Platform.dll */
+	/* 74: Xamarin.Forms.Platform.Android.dll */
 	/* uncompressed_file_size */
-	.long	178176
+	.long	858112
 	/* loaded */
 	.byte	0
 	/* data */
 	.zero	3
 	.long	compressed_assembly_data_74
 
-	/* 75: Xamarin.Forms.Xaml.dll */
+	/* 75: Xamarin.Forms.Platform.dll */
 	/* uncompressed_file_size */
-	.long	103424
+	.long	178176
 	/* loaded */
 	.byte	0
 	/* data */
 	.zero	3
 	.long	compressed_assembly_data_75
 
-	/* 76: Xamarin.Google.Android.Material.dll */
+	/* 76: Xamarin.Forms.Xaml.dll */
 	/* uncompressed_file_size */
-	.long	298496
+	.long	103424
 	/* loaded */
 	.byte	0
 	/* data */
 	.zero	3
 	.long	compressed_assembly_data_76
 
-	/* 77: Xamarin.Google.Guava.ListenableFuture.dll */
+	/* 77: Xamarin.Google.Android.Material.dll */
 	/* uncompressed_file_size */
-	.long	18072
+	.long	298496
 	/* loaded */
 	.byte	0
 	/* data */
 	.zero	3
 	.long	compressed_assembly_data_77
 
-	/* 78: mscorlib.dll */
+	/* 78: Xamarin.Google.Guava.ListenableFuture.dll */
 	/* uncompressed_file_size */
-	.long	2066432
+	.long	18072
 	/* loaded */
 	.byte	0
 	/* data */
 	.zero	3
 	.long	compressed_assembly_data_78
 
-	.size	.L.compressed_assembly_descriptors, 948
+	/* 79: mscorlib.dll */
+	/* uncompressed_file_size */
+	.long	2066432
+	/* loaded */
+	.byte	0
+	/* data */
+	.zero	3
+	.long	compressed_assembly_data_79
+
+	.size	.L.compressed_assembly_descriptors, 960
 	.section	.data.compressed_assemblies,"aw",@progbits
 	.type	compressed_assemblies, @object
 	.p2align	2
 	.global	compressed_assemblies
 compressed_assemblies:
 	/* count */
-	.long	79
+	.long	80
 	/* descriptors */
 	.long	.L.compressed_assembly_descriptors
 	.size	compressed_assemblies, 8

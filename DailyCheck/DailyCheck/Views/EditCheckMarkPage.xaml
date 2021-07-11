@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
-             x:Class="DailyCheck.Views.EditCheckMarkPage">
+             x:Class="DailyCheck.Views.EditCheckMarkPage" xmlns:viewmodels="clr-namespace:DailyCheck.ViewModels">
     <ContentPage.Content>
         <Grid RowSpacing="0">
             <Grid.RowDefinitions>
@@ -25,20 +25,16 @@
                 <Grid AbsoluteLayout.LayoutBounds="0.4, 0.165, 0.5, 0.2"
                         AbsoluteLayout.LayoutFlags="All">
                     <Label Grid.Row="0" TextColor="#16C60C" FontSize="Micro">Name</Label>
-                    <Entry Grid.Row="0" x:Name="CheckMarkNameInput" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+                    <Entry Grid.Row="0" x:Name="CheckMarkNameInput" Text="{Binding Name, Mode=TwoWay}" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
                     <Label Grid.Row="1" TextColor="#16C60C" FontSize="Micro">Description</Label>
-                    <Entry Grid.Row="1" x:Name="CheckMarkDescInput" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+                    <Entry Grid.Row="1" x:Name="CheckMarkDescInput" Text="{Binding Description, Mode=TwoWay}" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
                 </Grid>
                 <Grid AbsoluteLayout.LayoutBounds="0.5, 0.55, 0.5, 0.26"
                         AbsoluteLayout.LayoutFlags="All">
-                    <Button Grid.Row="0" CornerRadius="10" Text="EDIT" TextColor="white" Margin="0,0,0,10" BackgroundColor="#16C60C" VerticalOptions="CenterAndExpand" Clicked="EditButton_Clicked"></Button>
-                    <Button Grid.Row="1" CornerRadius="10" Text="DELETE" TextColor="white" Margin="0,0,0,10" BackgroundColor="#C50707" VerticalOptions="CenterAndExpand" Clicked="DeleteButton_Clicked"></Button>
-                    <Button Grid.Row="2" CornerRadius="10" Text="CONTINUE" TextColor="white" Margin="0,0,0,10" BackgroundColor="#0C93C6" VerticalOptions="CenterAndExpand" Clicked="ContinueButton_Clicked"></Button>
-                    <!--<BoxView HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" BackgroundColor="AntiqueWhite" ></BoxView>-->
+                    <Button Grid.Row="0" CornerRadius="10" Text="EDIT" TextColor="white" Margin="0,0,0,10" BackgroundColor="#16C60C" VerticalOptions="CenterAndExpand" Command="{Binding EditButtonClicked}"></Button>
+                    <Button Grid.Row="1" CornerRadius="10" Text="DELETE" TextColor="white" Margin="0,0,0,10" BackgroundColor="#C50707" VerticalOptions="CenterAndExpand" Command="{Binding DeleteButtonClicked}"></Button>
+                    <Button Grid.Row="2" CornerRadius="10" Text="CONTINUE" TextColor="white" Margin="0,0,0,10" BackgroundColor="#0C93C6" VerticalOptions="CenterAndExpand" Command="{Binding ContinueButtonClicked}"></Button>
                 </Grid>
-                <!-- <BoxView BackgroundColor="White" AbsoluteLayout.LayoutBounds="0.5, -0.05, 0.7, 0.8"
-                        AbsoluteLayout.LayoutFlags="All" CornerRadius="10" xct:ShadowEffect.OffsetY="3" xct:ShadowEffect.Radius="6" xct:ShadowEffect.Color="black" xct:ShadowEffect.Opacity="1"></BoxView>-->
-
             </AbsoluteLayout>
         </Grid>
     </ContentPage.Content>

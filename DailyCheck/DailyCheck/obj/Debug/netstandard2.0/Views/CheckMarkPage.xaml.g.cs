@@ -23,7 +23,7 @@ namespace DailyCheck.Views {
         private global::Xamarin.Forms.Label CheckMarkDescription;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::Lottie.Forms.AnimationView lottieTick;
+        private global::Lottie.Forms.AnimationView lottieClicked;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private global::Xamarin.Forms.ImageButton ButtonCheckMark;
@@ -33,7 +33,7 @@ namespace DailyCheck.Views {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(CheckMarkPage));
             CheckMarkName = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Label>(this, "CheckMarkName");
             CheckMarkDescription = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Label>(this, "CheckMarkDescription");
-            lottieTick = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Lottie.Forms.AnimationView>(this, "lottieTick");
+            lottieClicked = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Lottie.Forms.AnimationView>(this, "lottieClicked");
             ButtonCheckMark = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.ImageButton>(this, "ButtonCheckMark");
         }
     }
