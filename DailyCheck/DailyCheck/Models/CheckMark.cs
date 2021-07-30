@@ -1,11 +1,9 @@
-﻿using DailyCheck.Views;
-using SQLite;
+﻿using SQLite;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace DailyCheck.Models
 {
+    // Glowna klasa check mark`a
     public class CheckMark
     {
         private string name;
@@ -18,8 +16,10 @@ namespace DailyCheck.Models
         public bool IsClicked { get => isClicked; set => isClicked = value; }
         public DateTime LastClickedDate { get => lastClickedDate; set => lastClickedDate = value; }
 
+        // Pusty konstruktor wymagany do polaczenia z baza danych
         public CheckMark() { }
 
+        // Wlasciwy konstruktor
         public CheckMark(string name, string description)
         {
             if (CheckMarkList.CheckDuplicate(name) == false)
@@ -29,13 +29,13 @@ namespace DailyCheck.Models
                     Name = name;
                     Description = description;
                     IsClicked = false;
-                    
+
                     CheckMarkList.Add(this);
                 }
                 catch (ArgumentException error)
                 {
-                    Constants.SendMessage(error.Message, Constants.MessageType.Error);
-                    throw;
+                    Constants.SendMessage("Database connection problem", Constants.MessageType.Error);
+                    throw error;
                 }
             }
             else
@@ -46,9 +46,9 @@ namespace DailyCheck.Models
 
         public void EditCheckMark(string name, string description)
         {
-            if(name != Name)
+            if (name != Name)
             {
-                if(CheckMarkList.CheckDuplicate(name) == true)
+                if (CheckMarkList.CheckDuplicate(name) == true)
                 {
                     Constants.SendMessage("There is other check mark with the same name");
                     return;
@@ -59,8 +59,10 @@ namespace DailyCheck.Models
                     const string command = "UPDATE `CheckMark` SET `Name`= ? WHERE `Name`= ?";
                     conn.CreateCommand(command, new object[] { name, Name }).ExecuteNonQuery();
 
-                    const string command2 = "UPDATE `DailyStats` SET `Name`= ? WHERE `Name`= ?";
+                    const string command2 = "UPDATE `DailyClick` SET `Name`= ? WHERE `Name`= ?";
                     conn.CreateCommand(command2, new object[] { name, Name }).ExecuteNonQuery();
+
+                    conn.Close();
                 }
                 Name = name;
             }
@@ -70,6 +72,8 @@ namespace DailyCheck.Models
                 {
                     const string command = "UPDATE `CheckMark` SET `Description`= ? WHERE `Name`= ?";
                     conn.CreateCommand(command, new object[] { description, Name }).ExecuteNonQuery();
+
+                    conn.Close();
                 }
                 Description = description;
             }
@@ -87,7 +91,7 @@ namespace DailyCheck.Models
                 conn.CreateTable<CheckMark>();
 
                 const string command = "UPDATE `CheckMark` SET `IsClicked`= ? WHERE `Name`= ?";
-                conn.CreateCommand(command, new object[] { true, Name }).ExecuteNonQuery();
+                conn.CreateCommand(command, new object[] { IsClicked, Name }).ExecuteNonQuery();
                 const string command2 = "UPDATE `CheckMark` SET `LastClickedDate`= ? WHERE `Name`= ?";
                 conn.CreateCommand(command2, new object[] { LastClickedDate, Name }).ExecuteNonQuery();
 
@@ -99,7 +103,7 @@ namespace DailyCheck.Models
                 throw new System.ArgumentException("Database connection problem");
             }
 
-            new DailyStats(this);
+            new DailyClick(this);
         }
 
         public void DeleteCheckMark()
@@ -113,19 +117,21 @@ namespace DailyCheck.Models
                     const string command = "DELETE FROM `CheckMark` WHERE `Name`= ?";
                     conn.CreateCommand(command, new object[] { Name }).ExecuteNonQuery();
 
-                    const string command2 = "DELETE FROM `DailyStats` WHERE `Name`= ?";
+                    const string command2 = "DELETE FROM `DailyClick` WHERE `Name`= ?";
                     conn.CreateCommand(command2, new object[] { Name }).ExecuteNonQuery();
+
+                    conn.Close();
                 }
 
                 CheckMarkList.CheckMarks.Remove(this);
             }
             catch (System.Exception)
             {
+                // Niekrytyczny - Brak wyjatku
                 Constants.SendMessage("Database connection problem", Constants.MessageType.Error);
-                //throw new System.ArgumentException("Database connection problem");
                 throw;
             }
         }
-           
+
     }
 }

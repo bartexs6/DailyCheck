@@ -16,7 +16,6 @@ namespace DailyCheck.Views
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class CheckMarkCalendarPage : ContentPage
 	{
-		CheckMark checkMark;
 		public CheckMarkCalendarPage(CheckMark checkMark)
 		{
 			InitializeComponent();
@@ -30,13 +29,6 @@ namespace DailyCheck.Views
 			{
 				BindingContext = new CheckMarkCalendarViewModel(checkMark);
 			}
-		}
-
-		private void Back_Button(object sender, EventArgs e)
-		{
-			CheckMarkMenuPage menuCheckMark = new CheckMarkMenuPage(checkMark);
-			Application.Current.MainPage = menuCheckMark;
-			menuCheckMark = null;
 		}
 	}
 }

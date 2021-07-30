@@ -11,7 +11,7 @@
           "lib/xamarinios10/Lottie.iOS.dll": {}
         }
       },
-      "Com.Airbnb.Xamarin.Forms.Lottie/4.0.9": {
+      "Com.Airbnb.Xamarin.Forms.Lottie/4.0.10": {
         "type": "package",
         "dependencies": {
           "Com.Airbnb.iOS.Lottie": "2.5.13",
@@ -75,7 +75,7 @@
           "lib/netstandard2.0/SQLitePCLRaw.provider.dynamic_cdecl.dll": {}
         }
       },
-      "Syncfusion.Licensing/19.1.0.65": {
+      "Syncfusion.Licensing/19.2.0.47": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Syncfusion.Licensing.dll": {}
@@ -84,10 +84,10 @@
           "lib/Xamarin.iOS10/Syncfusion.Licensing.dll": {}
         }
       },
-      "Syncfusion.Xamarin.Core/19.1.0.65": {
+      "Syncfusion.Xamarin.Core/19.2.0.47": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "19.1.0.65",
+          "Syncfusion.Licensing": "19.2.0.47",
           "Xamarin.Forms": "4.5.0.617"
         },
         "compile": {
@@ -99,10 +99,10 @@
           "lib/Xamarin.iOS10/Syncfusion.Core.XForms.iOS.dll": {}
         }
       },
-      "Syncfusion.Xamarin.SfCalendar/19.1.0.65": {
+      "Syncfusion.Xamarin.SfCalendar/19.2.0.47": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Xamarin.Core": "19.1.0.65",
+          "Syncfusion.Xamarin.Core": "19.2.0.47",
           "Xamarin.Forms": "4.5.0.617"
         },
         "compile": {
@@ -163,10 +163,21 @@
           "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
         }
       },
-      "Xamarin.CommunityToolkit/1.1.0": {
+      "Xam.Plugins.Notifier/3.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/Plugin.LocalNotifications.Abstractions.dll": {},
+          "lib/Xamarin.iOS10/Plugin.LocalNotifications.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Plugin.LocalNotifications.Abstractions.dll": {},
+          "lib/Xamarin.iOS10/Plugin.LocalNotifications.dll": {}
+        }
+      },
+      "Xamarin.CommunityToolkit/1.2.0": {
         "type": "package",
         "dependencies": {
-          "Xamarin.Forms": "5.0.0.1874"
+          "Xamarin.Forms": "[5.0.0.1874, 5.0.0.2012]"
         },
         "frameworkAssemblies": [
           "System.Drawing.Common.dll"
@@ -338,11 +349,12 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Com.Airbnb.Xamarin.Forms.Lottie": "4.0.9",
-          "Syncfusion.Xamarin.SfCalendar": "19.1.0.65",
-          "Xamarin.CommunityToolkit": "1.1.0",
-          "Xamarin.Essentials": "1.6.1",
-          "Xamarin.Forms": "5.0.0.2012",
+          "Com.Airbnb.Xamarin.Forms.Lottie": "4.0.10",
+          "Syncfusion.Xamarin.SfCalendar": "19.2.0.47",
+          "Xam.Plugins.Notifier": "3.0.1",
+          "Xamarin.CommunityToolkit": "1.2.0",
+          "Xamarin.Essentials": "1.7.0",
+          "Xamarin.Forms": "5.0.0.2083",
           "Xamarin.Forms.PancakeView": "2.3.0.759",
           "sqlite-net-pcl": "1.7.335"
         },
@@ -364,7 +376,7 @@
           "lib/xamarinios10/Lottie.iOS.dll": {}
         }
       },
-      "Com.Airbnb.Xamarin.Forms.Lottie/4.0.9": {
+      "Com.Airbnb.Xamarin.Forms.Lottie/4.0.10": {
         "type": "package",
         "dependencies": {
           "Com.Airbnb.iOS.Lottie": "2.5.13",
@@ -428,7 +440,7 @@
           "lib/netstandard2.0/SQLitePCLRaw.provider.dynamic_cdecl.dll": {}
         }
       },
-      "Syncfusion.Licensing/19.1.0.65": {
+      "Syncfusion.Licensing/19.2.0.47": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Syncfusion.Licensing.dll": {}
@@ -437,10 +449,10 @@
           "lib/Xamarin.iOS10/Syncfusion.Licensing.dll": {}
         }
       },
-      "Syncfusion.Xamarin.Core/19.1.0.65": {
+      "Syncfusion.Xamarin.Core/19.2.0.47": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "19.1.0.65",
+          "Syncfusion.Licensing": "19.2.0.47",
           "Xamarin.Forms": "4.5.0.617"
         },
         "compile": {
@@ -452,10 +464,10 @@
           "lib/Xamarin.iOS10/Syncfusion.Core.XForms.iOS.dll": {}
         }
       },
-      "Syncfusion.Xamarin.SfCalendar/19.1.0.65": {
+      "Syncfusion.Xamarin.SfCalendar/19.2.0.47": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Xamarin.Core": "19.1.0.65",
+          "Syncfusion.Xamarin.Core": "19.2.0.47",
           "Xamarin.Forms": "4.5.0.617"
         },
         "compile": {
@@ -516,10 +528,21 @@
           "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
         }
       },
-      "Xamarin.CommunityToolkit/1.1.0": {
+      "Xam.Plugins.Notifier/3.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/Plugin.LocalNotifications.Abstractions.dll": {},
+          "lib/Xamarin.iOS10/Plugin.LocalNotifications.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Plugin.LocalNotifications.Abstractions.dll": {},
+          "lib/Xamarin.iOS10/Plugin.LocalNotifications.dll": {}
+        }
+      },
+      "Xamarin.CommunityToolkit/1.2.0": {
         "type": "package",
         "dependencies": {
-          "Xamarin.Forms": "5.0.0.1874"
+          "Xamarin.Forms": "[5.0.0.1874, 5.0.0.2012]"
         },
         "frameworkAssemblies": [
           "System.Drawing.Common.dll"
@@ -691,11 +714,12 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Com.Airbnb.Xamarin.Forms.Lottie": "4.0.9",
-          "Syncfusion.Xamarin.SfCalendar": "19.1.0.65",
-          "Xamarin.CommunityToolkit": "1.1.0",
-          "Xamarin.Essentials": "1.6.1",
-          "Xamarin.Forms": "5.0.0.2012",
+          "Com.Airbnb.Xamarin.Forms.Lottie": "4.0.10",
+          "Syncfusion.Xamarin.SfCalendar": "19.2.0.47",
+          "Xam.Plugins.Notifier": "3.0.1",
+          "Xamarin.CommunityToolkit": "1.2.0",
+          "Xamarin.Essentials": "1.7.0",
+          "Xamarin.Forms": "5.0.0.2083",
           "Xamarin.Forms.PancakeView": "2.3.0.759",
           "sqlite-net-pcl": "1.7.335"
         },
@@ -717,7 +741,7 @@
           "lib/xamarinios10/Lottie.iOS.dll": {}
         }
       },
-      "Com.Airbnb.Xamarin.Forms.Lottie/4.0.9": {
+      "Com.Airbnb.Xamarin.Forms.Lottie/4.0.10": {
         "type": "package",
         "dependencies": {
           "Com.Airbnb.iOS.Lottie": "2.5.13",
@@ -781,7 +805,7 @@
           "lib/netstandard2.0/SQLitePCLRaw.provider.dynamic_cdecl.dll": {}
         }
       },
-      "Syncfusion.Licensing/19.1.0.65": {
+      "Syncfusion.Licensing/19.2.0.47": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Syncfusion.Licensing.dll": {}
@@ -790,10 +814,10 @@
           "lib/Xamarin.iOS10/Syncfusion.Licensing.dll": {}
         }
       },
-      "Syncfusion.Xamarin.Core/19.1.0.65": {
+      "Syncfusion.Xamarin.Core/19.2.0.47": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "19.1.0.65",
+          "Syncfusion.Licensing": "19.2.0.47",
           "Xamarin.Forms": "4.5.0.617"
         },
         "compile": {
@@ -805,10 +829,10 @@
           "lib/Xamarin.iOS10/Syncfusion.Core.XForms.iOS.dll": {}
         }
       },
-      "Syncfusion.Xamarin.SfCalendar/19.1.0.65": {
+      "Syncfusion.Xamarin.SfCalendar/19.2.0.47": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Xamarin.Core": "19.1.0.65",
+          "Syncfusion.Xamarin.Core": "19.2.0.47",
           "Xamarin.Forms": "4.5.0.617"
         },
         "compile": {
@@ -869,10 +893,21 @@
           "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
         }
       },
-      "Xamarin.CommunityToolkit/1.1.0": {
+      "Xam.Plugins.Notifier/3.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/Plugin.LocalNotifications.Abstractions.dll": {},
+          "lib/Xamarin.iOS10/Plugin.LocalNotifications.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Plugin.LocalNotifications.Abstractions.dll": {},
+          "lib/Xamarin.iOS10/Plugin.LocalNotifications.dll": {}
+        }
+      },
+      "Xamarin.CommunityToolkit/1.2.0": {
         "type": "package",
         "dependencies": {
-          "Xamarin.Forms": "5.0.0.1874"
+          "Xamarin.Forms": "[5.0.0.1874, 5.0.0.2012]"
         },
         "frameworkAssemblies": [
           "System.Drawing.Common.dll"
@@ -1044,11 +1079,12 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Com.Airbnb.Xamarin.Forms.Lottie": "4.0.9",
-          "Syncfusion.Xamarin.SfCalendar": "19.1.0.65",
-          "Xamarin.CommunityToolkit": "1.1.0",
-          "Xamarin.Essentials": "1.6.1",
-          "Xamarin.Forms": "5.0.0.2012",
+          "Com.Airbnb.Xamarin.Forms.Lottie": "4.0.10",
+          "Syncfusion.Xamarin.SfCalendar": "19.2.0.47",
+          "Xam.Plugins.Notifier": "3.0.1",
+          "Xamarin.CommunityToolkit": "1.2.0",
+          "Xamarin.Essentials": "1.7.0",
+          "Xamarin.Forms": "5.0.0.2083",
           "Xamarin.Forms.PancakeView": "2.3.0.759",
           "sqlite-net-pcl": "1.7.335"
         },
@@ -1070,7 +1106,7 @@
           "lib/xamarinios10/Lottie.iOS.dll": {}
         }
       },
-      "Com.Airbnb.Xamarin.Forms.Lottie/4.0.9": {
+      "Com.Airbnb.Xamarin.Forms.Lottie/4.0.10": {
         "type": "package",
         "dependencies": {
           "Com.Airbnb.iOS.Lottie": "2.5.13",
@@ -1134,7 +1170,7 @@
           "lib/netstandard2.0/SQLitePCLRaw.provider.dynamic_cdecl.dll": {}
         }
       },
-      "Syncfusion.Licensing/19.1.0.65": {
+      "Syncfusion.Licensing/19.2.0.47": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Syncfusion.Licensing.dll": {}
@@ -1143,10 +1179,10 @@
           "lib/Xamarin.iOS10/Syncfusion.Licensing.dll": {}
         }
       },
-      "Syncfusion.Xamarin.Core/19.1.0.65": {
+      "Syncfusion.Xamarin.Core/19.2.0.47": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "19.1.0.65",
+          "Syncfusion.Licensing": "19.2.0.47",
           "Xamarin.Forms": "4.5.0.617"
         },
         "compile": {
@@ -1158,10 +1194,10 @@
           "lib/Xamarin.iOS10/Syncfusion.Core.XForms.iOS.dll": {}
         }
       },
-      "Syncfusion.Xamarin.SfCalendar/19.1.0.65": {
+      "Syncfusion.Xamarin.SfCalendar/19.2.0.47": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Xamarin.Core": "19.1.0.65",
+          "Syncfusion.Xamarin.Core": "19.2.0.47",
           "Xamarin.Forms": "4.5.0.617"
         },
         "compile": {
@@ -1222,10 +1258,21 @@
           "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
         }
       },
-      "Xamarin.CommunityToolkit/1.1.0": {
+      "Xam.Plugins.Notifier/3.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/Plugin.LocalNotifications.Abstractions.dll": {},
+          "lib/Xamarin.iOS10/Plugin.LocalNotifications.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Plugin.LocalNotifications.Abstractions.dll": {},
+          "lib/Xamarin.iOS10/Plugin.LocalNotifications.dll": {}
+        }
+      },
+      "Xamarin.CommunityToolkit/1.2.0": {
         "type": "package",
         "dependencies": {
-          "Xamarin.Forms": "5.0.0.1874"
+          "Xamarin.Forms": "[5.0.0.1874, 5.0.0.2012]"
         },
         "frameworkAssemblies": [
           "System.Drawing.Common.dll"
@@ -1397,11 +1444,12 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Com.Airbnb.Xamarin.Forms.Lottie": "4.0.9",
-          "Syncfusion.Xamarin.SfCalendar": "19.1.0.65",
-          "Xamarin.CommunityToolkit": "1.1.0",
-          "Xamarin.Essentials": "1.6.1",
-          "Xamarin.Forms": "5.0.0.2012",
+          "Com.Airbnb.Xamarin.Forms.Lottie": "4.0.10",
+          "Syncfusion.Xamarin.SfCalendar": "19.2.0.47",
+          "Xam.Plugins.Notifier": "3.0.1",
+          "Xamarin.CommunityToolkit": "1.2.0",
+          "Xamarin.Essentials": "1.7.0",
+          "Xamarin.Forms": "5.0.0.2083",
           "Xamarin.Forms.PancakeView": "2.3.0.759",
           "sqlite-net-pcl": "1.7.335"
         },
@@ -1438,15 +1486,15 @@
         "readme.txt"
       ]
     },
-    "Com.Airbnb.Xamarin.Forms.Lottie/4.0.9": {
-      "sha512": "aMWf7ej3usaCljPig8Hq2pFzleKOlqL+Dm1Hl0rCc32CMFapnunOC/970AUkx2YaplN+IQcXdsD9y0ngQW+w3A==",
+    "Com.Airbnb.Xamarin.Forms.Lottie/4.0.10": {
+      "sha512": "8FjZg6fCRcH3s1elgAiMEiX1CF5alaUCsNUG0I16pcycZAXeh2P4ZU+c1PRVnA/GwyBAQLU+yV/jWhW2ORNgkw==",
       "type": "package",
-      "path": "com.airbnb.xamarin.forms.lottie/4.0.9",
+      "path": "com.airbnb.xamarin.forms.lottie/4.0.10",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE",
-        "com.airbnb.xamarin.forms.lottie.4.0.9.nupkg.sha512",
+        "com.airbnb.xamarin.forms.lottie.4.0.10.nupkg.sha512",
         "com.airbnb.xamarin.forms.lottie.nuspec",
         "icon.png",
         "lib/monoandroid10.0/Lottie.Forms.dll",
@@ -1533,10 +1581,10 @@
         "sqlitepclraw.provider.dynamic_cdecl.nuspec"
       ]
     },
-    "Syncfusion.Licensing/19.1.0.65": {
-      "sha512": "8EcKVkFjNawxghmLdkw/9uDdPtdlcACzNid/rWyngI5JocZaKINnufakOsULmcseHHzJgUzoCRYRXvmOH8FKaw==",
+    "Syncfusion.Licensing/19.2.0.47": {
+      "sha512": "Sc6QdWzmRfMrCtSgmB5TaJjtZClANa7i9BWwZFlR0hLekIOqQwAFx3OOEoRoPWNzS9wdUteDQD0695n6b6YNxw==",
       "type": "package",
-      "path": "syncfusion.licensing/19.1.0.65",
+      "path": "syncfusion.licensing/19.2.0.47",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1558,14 +1606,14 @@
         "lib/netstandard2.0/Syncfusion.Licensing.dll",
         "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.Licensing.dll",
         "lib/uap10.0/Syncfusion.Licensing.dll",
-        "syncfusion.licensing.19.1.0.65.nupkg.sha512",
+        "syncfusion.licensing.19.2.0.47.nupkg.sha512",
         "syncfusion.licensing.nuspec"
       ]
     },
-    "Syncfusion.Xamarin.Core/19.1.0.65": {
-      "sha512": "6XJiJKYZBr5QHZLrPMcqCac1EIou33xZmqoBxECtAIxOF/PgMSb/qgO2YlBp5TlAyHDCW65kn3KVPgyRaoHsww==",
+    "Syncfusion.Xamarin.Core/19.2.0.47": {
+      "sha512": "scy/jQTrIrBanNv+Btb2rO8BTUP4JzUJIuyv3/MHIuVT1l+gucdkAo6ihYGj40WMipChK+iLOq6z4OOW94z4/w==",
       "type": "package",
-      "path": "syncfusion.xamarin.core/19.1.0.65",
+      "path": "syncfusion.xamarin.core/19.2.0.47",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1593,14 +1641,14 @@
         "lib/uap10.0/Syncfusion.Core.XForms.UWP/TILRenderer/ToggleIcons/ToggleVisibleIcon.xaml",
         "lib/uap10.0/Syncfusion.Core.XForms.dll",
         "lib/uap10.0/Syncfusion.Core.XForms.xml",
-        "syncfusion.xamarin.core.19.1.0.65.nupkg.sha512",
+        "syncfusion.xamarin.core.19.2.0.47.nupkg.sha512",
         "syncfusion.xamarin.core.nuspec"
       ]
     },
-    "Syncfusion.Xamarin.SfCalendar/19.1.0.65": {
-      "sha512": "MlGblbEF6myOxj26//bt+2puJj1Dm8Dr5MRaldJYzJ5qTR9FgHePlDSeA5Zy8DgsdDp2uIKUjY7dXMHi8JCixQ==",
+    "Syncfusion.Xamarin.SfCalendar/19.2.0.47": {
+      "sha512": "LTSwYFBlT6KRx41bbCQCWNNPEIDfRouAv3NBzFQ/KhVYMukeLig834bQaDzv9MrDQyPgv9zUCIi81nU8lnWYEA==",
       "type": "package",
-      "path": "syncfusion.xamarin.sfcalendar/19.1.0.65",
+      "path": "syncfusion.xamarin.sfcalendar/19.2.0.47",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1625,7 +1673,7 @@
         "lib/uap10.0/Syncfusion.SfCalendar.XForms.UWP/Themes/Generic.xbf",
         "lib/uap10.0/Syncfusion.SfCalendar.XForms.dll",
         "lib/uap10.0/Syncfusion.SfCalendar.XForms.xml",
-        "syncfusion.xamarin.sfcalendar.19.1.0.65.nupkg.sha512",
+        "syncfusion.xamarin.sfcalendar.19.2.0.47.nupkg.sha512",
         "syncfusion.xamarin.sfcalendar.nuspec"
       ]
     },
@@ -1806,10 +1854,45 @@
         "version.txt"
       ]
     },
-    "Xamarin.CommunityToolkit/1.1.0": {
-      "sha512": "GJiaXaPLrM1qn1HYxDPKlECYAzX5CI6FKtv4NXCq8K7SJTscmFo79RcwZoj1o3de+4V0aiJAVZMCpbMIF/sZVA==",
+    "Xam.Plugins.Notifier/3.0.1": {
+      "sha512": "QH/+zX9w/hMg1AOAj+a62cIJIqd4tSOSBnGGprHIhfJWHG+v+P6VvIqZSTr9z1dZDd2JfhA7Iz2KGBr4MJ2lOQ==",
       "type": "package",
-      "path": "xamarin.communitytoolkit/1.1.0",
+      "path": "xam.plugins.notifier/3.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid10/Plugin.LocalNotifications.Abstractions.dll",
+        "lib/MonoAndroid10/Plugin.LocalNotifications.Abstractions.xml",
+        "lib/MonoAndroid10/Plugin.LocalNotifications.XML",
+        "lib/MonoAndroid10/Plugin.LocalNotifications.dll",
+        "lib/MonoAndroid10/Plugin.LocalNotifications.pdb",
+        "lib/UAP10/Plugin.LocalNotifications.Abstractions.dll",
+        "lib/UAP10/Plugin.LocalNotifications.Abstractions.xml",
+        "lib/UAP10/Plugin.LocalNotifications.XML",
+        "lib/UAP10/Plugin.LocalNotifications.dll",
+        "lib/UAP10/Plugin.LocalNotifications.pdb",
+        "lib/UAP10/Plugin.LocalNotifications.pri",
+        "lib/Xamarin.Mac20/Plugin.LocalNotifications.Abstractions.dll",
+        "lib/Xamarin.Mac20/Plugin.LocalNotifications.Abstractions.xml",
+        "lib/Xamarin.Mac20/Plugin.LocalNotifications.dll",
+        "lib/Xamarin.Mac20/Plugin.LocalNotifications.xml",
+        "lib/Xamarin.iOS10/Plugin.LocalNotifications.Abstractions.dll",
+        "lib/Xamarin.iOS10/Plugin.LocalNotifications.Abstractions.xml",
+        "lib/Xamarin.iOS10/Plugin.LocalNotifications.XML",
+        "lib/Xamarin.iOS10/Plugin.LocalNotifications.dll",
+        "lib/netstandard1.0/Plugin.LocalNotifications.Abstractions.dll",
+        "lib/netstandard1.0/Plugin.LocalNotifications.Abstractions.xml",
+        "lib/netstandard1.0/Plugin.LocalNotifications.deps.json",
+        "lib/netstandard1.0/Plugin.LocalNotifications.dll",
+        "lib/netstandard1.0/Plugin.LocalNotifications.xml",
+        "xam.plugins.notifier.3.0.1.nupkg.sha512",
+        "xam.plugins.notifier.nuspec"
+      ]
+    },
+    "Xamarin.CommunityToolkit/1.2.0": {
+      "sha512": "N2f4a0MmdRTx2QyxtcEeoV0yVXNblIhs9H2NED0v+YNn42AaRnw1WN4sG+Okw8jOkc3iyMkrVtn6EjzE29EjmQ==",
+      "type": "package",
+      "path": "xamarin.communitytoolkit/1.2.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1844,7 +1927,7 @@
         "lib/xamarintvos10/Xamarin.CommunityToolkit.xml",
         "lib/xamarinwatchos10/Xamarin.CommunityToolkit.dll",
         "lib/xamarinwatchos10/Xamarin.CommunityToolkit.xml",
-        "xamarin.communitytoolkit.1.1.0.nupkg.sha512",
+        "xamarin.communitytoolkit.1.2.0.nupkg.sha512",
         "xamarin.communitytoolkit.nuspec"
       ]
     },
@@ -2228,5 +2311,33 @@
         "#import": []
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Wykryto obniżenie wersji pakietu: Xamarin.Essentials z 1.7.0 na 1.6.1. Aby wybrać inną wersję, odwołaj się do pakietu bezpośrednio z projektu. \r\n DailyCheck.iOS -> DailyCheck -> Xamarin.Essentials (>= 1.7.0) \r\n DailyCheck.iOS -> Xamarin.Essentials (>= 1.6.1)",
+      "libraryId": "Xamarin.Essentials",
+      "targetGraphs": [
+        "Xamarin.iOS,Version=v1.0",
+        "Xamarin.iOS,Version=v1.0/win",
+        "Xamarin.iOS,Version=v1.0/win-x64",
+        "Xamarin.iOS,Version=v1.0/win-x86"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Wykryto obniżenie wersji pakietu: Xamarin.Forms z 5.0.0.2083 na 5.0.0.2012. Aby wybrać inną wersję, odwołaj się do pakietu bezpośrednio z projektu. \r\n DailyCheck.iOS -> DailyCheck -> Xamarin.Forms (>= 5.0.0.2083) \r\n DailyCheck.iOS -> Xamarin.Forms (>= 5.0.0.2012)",
+      "libraryId": "Xamarin.Forms",
+      "targetGraphs": [
+        "Xamarin.iOS,Version=v1.0",
+        "Xamarin.iOS,Version=v1.0/win",
+        "Xamarin.iOS,Version=v1.0/win-x64",
+        "Xamarin.iOS,Version=v1.0/win-x86"
+      ]
+    }
+  ]
 }

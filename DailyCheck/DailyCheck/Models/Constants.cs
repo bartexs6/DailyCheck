@@ -1,20 +1,16 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Text;
 
 namespace DailyCheck.Models
 {
+    // Klasa zawierajaca stale oraz podstawowe funkcje
     class Constants
     {
         public const string DatabaseFilename = "DailyCheck.db3";
 
         public const SQLite.SQLiteOpenFlags Flags =
-            // open the database in read/write mode
             SQLite.SQLiteOpenFlags.ReadWrite |
-            // create the database if it doesn't exist
             SQLite.SQLiteOpenFlags.Create |
-            // enable multi-threaded database access
             SQLite.SQLiteOpenFlags.SharedCache;
 
         public static string DatabasePath
@@ -36,7 +32,7 @@ namespace DailyCheck.Models
             switch (messageType)
             {
                 case MessageType.Info:
-                    App.Current.MainPage.DisplayAlert("Info", message, "OK");
+                    App.Current.MainPage.DisplayAlert("Information", message, "OK");
                     break;
                 case MessageType.Error:
                     App.Current.MainPage.DisplayAlert("Ups...", message, "OK");

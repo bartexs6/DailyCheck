@@ -4,6 +4,7 @@ using System.Collections.Generic;
 
 namespace DailyCheck.Models
 {
+    // Klasa operujaca na liscie check mark`ow
     class CheckMarkList
     {
         public static List<CheckMark> CheckMarks = new List<CheckMark>();
@@ -13,7 +14,7 @@ namespace DailyCheck.Models
             using (SQLiteConnection conn = new SQLiteConnection(Constants.DatabasePath))
             {
                 conn.CreateTable<CheckMark>();
-                if (conn.Table<CheckMark>().ToList().Count == 0)
+                /*if (conn.Table<CheckMark>().ToList().Count == 0)
                 {
                     CheckMark newCheckMark = new CheckMark(
                         name: "My check mark",
@@ -21,47 +22,34 @@ namespace DailyCheck.Models
                         );
 
                     conn.Insert(newCheckMark);
-                }
-                else
+                }*/
+                CheckMarks = conn.Table<CheckMark>().ToList();
+                for (int i = 0; i < CheckMarks.Count; i++)
                 {
-                    CheckMarks = conn.Table<CheckMark>().ToList();
-                    for (int i = 0; i < CheckMarks.Count; i++)
+                    if (CheckMarks[i].Name == null)
                     {
-                        if (CheckMarks[i].Name == null)
-                        {
-                            CheckMarks.Remove(CheckMarks[i]);
-                        }
+                        CheckMarks.Remove(CheckMarks[i]);
                     }
-                    CheckDate();
                 }
+                CheckDate();
 
                 conn.Close();
             }
         }
 
-        public static bool Add(CheckMark checkMark)
+        public static void Add(CheckMark checkMark)
         {
-            if(CheckDuplicate(checkMark.Name) == true)
+
+            CheckMarks.Add(checkMark);
+            try
             {
-                return false;
-                throw new System.ArgumentException("There is already a check mark with a similar name");
+                SQLiteConnection conn = new SQLiteConnection(Constants.DatabasePath);
+                conn.Insert(checkMark);
+                conn.Close();
             }
-            else
+            catch (System.Exception)
             {
-                CheckMarks.Add(checkMark);
-                try
-                {
-                    SQLiteConnection conn = new SQLiteConnection(Constants.DatabasePath);
-                    conn.Insert(checkMark);
-                    conn.Close();
-                }
-                catch (System.Exception)
-                {
-                    throw new System.ArgumentException("Database connection problem");
-                }
-
-
-                return true;
+                throw new System.ArgumentException("Database connection problem");
             }
         }
 
@@ -74,9 +62,11 @@ namespace DailyCheck.Models
                 {
                     if (i.Name == name)
                     {
+                        conn.Close();
                         return true;
                     }
                 }
+                conn.Close();
                 return false;
             }
         }
@@ -94,6 +84,8 @@ namespace DailyCheck.Models
 
                         const string command = "UPDATE `CheckMark` SET `IsClicked`= false WHERE `Name`= ? ";
                         conn.CreateCommand(command, new object[] { CheckMark.Name }).ExecuteNonQuery();
+
+                        conn.Close();
                     }
                 }
             }

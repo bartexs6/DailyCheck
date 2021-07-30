@@ -15,6 +15,7 @@ namespace DailyCheck.ViewModels
         public ICommand CheckMarkClicked { get; }
         public ICommand EditCheckMarkClicked { get; }
         public ICommand CheckMarkMenuClicked { get; }
+        public ICommand StatsClicked { get; }
         public ICommand CalendarClicked { get; }
 
         public event PropertyChangedEventHandler PropertyChanged;
@@ -75,6 +76,7 @@ namespace DailyCheck.ViewModels
             EditCheckMarkClicked = new Command(EditCheckMark_Button);
             CheckMarkMenuClicked = new Command(CheckMarkMenu_Button);
             CalendarClicked = new Command(Calendar_Button);
+            StatsClicked = new Command(OnStatsClicked);
 
             if (checkMark.IsClicked)
             {
@@ -95,20 +97,26 @@ namespace DailyCheck.ViewModels
 
         private void EditCheckMark_Button()
         {
-            EditCheckMarkPage editCheckMark = new EditCheckMarkPage(CheckMark);
-            Application.Current.MainPage = editCheckMark;
+           EditCheckMarkPage editCheckMark = new EditCheckMarkPage(CheckMark);
+           Application.Current.MainPage = editCheckMark;
         }
 
         private void CheckMarkMenu_Button()
         {
-            CheckMarkMenuPage menuCheckMark = new CheckMarkMenuPage(CheckMark);
-            Application.Current.MainPage = menuCheckMark;
+            //CheckMarkMenuPage menuCheckMark = new CheckMarkMenuPage(CheckMark);
+            //Application.Current.MainPage = menuCheckMark;
         }
 
         private void Calendar_Button()
         {
             CheckMarkCalendarPage calendarCheckMark = new CheckMarkCalendarPage(CheckMark);
             Application.Current.MainPage = calendarCheckMark;
+        }
+
+        private void OnStatsClicked()
+        {
+            CheckMarkStatsPage statsCheckMark = new CheckMarkStatsPage(CheckMark);
+            Application.Current.MainPage = statsCheckMark;
         }
     }
 

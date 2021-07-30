@@ -9,27 +9,29 @@
     ".NETStandard,Version=v2.0/": {
       "DailyCheck/1.0.0": {
         "dependencies": {
-          "Com.Airbnb.Xamarin.Forms.Lottie": "4.0.9",
+          "Com.Airbnb.Xamarin.Forms.Lottie": "4.0.10",
           "NETStandard.Library": "2.0.3",
-          "Syncfusion.Xamarin.SfCalendar": "19.1.0.65",
-          "Xamarin.CommunityToolkit": "1.1.0",
-          "Xamarin.Essentials": "1.6.1",
-          "Xamarin.Forms": "5.0.0.2012",
+          "Syncfusion.Xamarin.SfCalendar": "19.2.0.47",
+          "Xam.Plugins.Notifier": "3.0.1",
+          "Xamarin.CommunityToolkit": "1.2.0",
+          "Xamarin.Essentials": "1.7.0",
+          "Xamarin.Forms": "5.0.0.2083",
           "Xamarin.Forms.PancakeView": "2.3.0.759",
-          "sqlite-net-pcl": "1.7.335"
+          "sqlite-net-pcl": "1.7.335",
+          "Xamarin.AndroidX.Core": "1.0.0.0"
         },
         "runtime": {
           "DailyCheck.dll": {}
         }
       },
-      "Com.Airbnb.Xamarin.Forms.Lottie/4.0.9": {
+      "Com.Airbnb.Xamarin.Forms.Lottie/4.0.10": {
         "dependencies": {
-          "Xamarin.Forms": "5.0.0.2012"
+          "Xamarin.Forms": "5.0.0.2083"
         },
         "runtime": {
           "lib/netstandard2.0/Lottie.Forms.dll": {
-            "assemblyVersion": "4.0.9.0",
-            "fileVersion": "4.0.9.0"
+            "assemblyVersion": "4.0.10.0",
+            "fileVersion": "4.0.10.0"
           }
         }
       },
@@ -87,35 +89,35 @@
           }
         }
       },
-      "Syncfusion.Licensing/19.1.0.65": {
+      "Syncfusion.Licensing/19.2.0.47": {
         "runtime": {
           "lib/netstandard2.0/Syncfusion.Licensing.dll": {
-            "assemblyVersion": "19.1.0.65",
-            "fileVersion": "19.1.0.65"
+            "assemblyVersion": "19.2.0.47",
+            "fileVersion": "19.2.0.47"
           }
         }
       },
-      "Syncfusion.Xamarin.Core/19.1.0.65": {
+      "Syncfusion.Xamarin.Core/19.2.0.47": {
         "dependencies": {
-          "Syncfusion.Licensing": "19.1.0.65",
-          "Xamarin.Forms": "5.0.0.2012"
+          "Syncfusion.Licensing": "19.2.0.47",
+          "Xamarin.Forms": "5.0.0.2083"
         },
         "runtime": {
           "lib/netstandard2.0/Syncfusion.Core.XForms.dll": {
-            "assemblyVersion": "19.1451.0.65",
-            "fileVersion": "19.1451.0.65"
+            "assemblyVersion": "19.2451.0.47",
+            "fileVersion": "19.2451.0.47"
           }
         }
       },
-      "Syncfusion.Xamarin.SfCalendar/19.1.0.65": {
+      "Syncfusion.Xamarin.SfCalendar/19.2.0.47": {
         "dependencies": {
-          "Syncfusion.Xamarin.Core": "19.1.0.65",
-          "Xamarin.Forms": "5.0.0.2012"
+          "Syncfusion.Xamarin.Core": "19.2.0.47",
+          "Xamarin.Forms": "5.0.0.2083"
         },
         "runtime": {
           "lib/netstandard2.0/Syncfusion.SfCalendar.XForms.dll": {
-            "assemblyVersion": "19.1451.0.65",
-            "fileVersion": "19.1451.0.65"
+            "assemblyVersion": "19.2451.0.47",
+            "fileVersion": "19.2451.0.47"
           }
         }
       },
@@ -203,11 +205,23 @@
           }
         }
       },
-      "Xamarin.CommunityToolkit/1.1.0": {
+      "Xam.Plugins.Notifier/3.0.1": {
+        "runtime": {
+          "lib/netstandard1.0/Plugin.LocalNotifications.Abstractions.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          },
+          "lib/netstandard1.0/Plugin.LocalNotifications.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Xamarin.CommunityToolkit/1.2.0": {
         "dependencies": {
           "System.Reflection.Emit.Lightweight": "4.7.0",
           "System.Threading.Tasks.Extensions": "4.5.4",
-          "Xamarin.Forms": "5.0.0.2012"
+          "Xamarin.Forms": "5.0.0.2083"
         },
         "runtime": {
           "lib/netstandard2.0/Xamarin.CommunityToolkit.dll": {
@@ -216,7 +230,7 @@
           }
         }
       },
-      "Xamarin.Essentials/1.6.1": {
+      "Xamarin.Essentials/1.7.0": {
         "dependencies": {
           "System.Numerics.Vectors": "4.5.0"
         },
@@ -227,31 +241,39 @@
           }
         }
       },
-      "Xamarin.Forms/5.0.0.2012": {
+      "Xamarin.Forms/5.0.0.2083": {
         "runtime": {
           "lib/netstandard2.0/Xamarin.Forms.Core.dll": {
             "assemblyVersion": "2.0.0.0",
-            "fileVersion": "5.0.0.671"
+            "fileVersion": "5.0.0.716"
           },
           "lib/netstandard2.0/Xamarin.Forms.Platform.dll": {
             "assemblyVersion": "2.0.0.0",
-            "fileVersion": "5.0.0.671"
+            "fileVersion": "5.0.0.716"
           },
           "lib/netstandard2.0/Xamarin.Forms.Xaml.dll": {
             "assemblyVersion": "2.0.0.0",
-            "fileVersion": "5.0.0.671"
+            "fileVersion": "5.0.0.716"
           }
         }
       },
       "Xamarin.Forms.PancakeView/2.3.0.759": {
         "dependencies": {
           "System.ComponentModel": "4.3.0",
-          "Xamarin.Forms": "5.0.0.2012"
+          "Xamarin.Forms": "5.0.0.2083"
         },
         "runtime": {
           "lib/netstandard2.0/Xamarin.Forms.PancakeView.dll": {
             "assemblyVersion": "2.0.1.0",
             "fileVersion": "2.0.1.0"
+          }
+        }
+      },
+      "Xamarin.AndroidX.Core/1.0.0.0": {
+        "runtime": {
+          "Xamarin.AndroidX.Core.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
           }
         }
       }
@@ -263,12 +285,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Com.Airbnb.Xamarin.Forms.Lottie/4.0.9": {
+    "Com.Airbnb.Xamarin.Forms.Lottie/4.0.10": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-aMWf7ej3usaCljPig8Hq2pFzleKOlqL+Dm1Hl0rCc32CMFapnunOC/970AUkx2YaplN+IQcXdsD9y0ngQW+w3A==",
-      "path": "com.airbnb.xamarin.forms.lottie/4.0.9",
-      "hashPath": "com.airbnb.xamarin.forms.lottie.4.0.9.nupkg.sha512"
+      "sha512": "sha512-8FjZg6fCRcH3s1elgAiMEiX1CF5alaUCsNUG0I16pcycZAXeh2P4ZU+c1PRVnA/GwyBAQLU+yV/jWhW2ORNgkw==",
+      "path": "com.airbnb.xamarin.forms.lottie/4.0.10",
+      "hashPath": "com.airbnb.xamarin.forms.lottie.4.0.10.nupkg.sha512"
     },
     "Microsoft.NETCore.Platforms/1.1.0": {
       "type": "package",
@@ -326,26 +348,26 @@
       "path": "sqlitepclraw.provider.e_sqlite3/2.0.3",
       "hashPath": "sqlitepclraw.provider.e_sqlite3.2.0.3.nupkg.sha512"
     },
-    "Syncfusion.Licensing/19.1.0.65": {
+    "Syncfusion.Licensing/19.2.0.47": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-8EcKVkFjNawxghmLdkw/9uDdPtdlcACzNid/rWyngI5JocZaKINnufakOsULmcseHHzJgUzoCRYRXvmOH8FKaw==",
-      "path": "syncfusion.licensing/19.1.0.65",
-      "hashPath": "syncfusion.licensing.19.1.0.65.nupkg.sha512"
+      "sha512": "sha512-Sc6QdWzmRfMrCtSgmB5TaJjtZClANa7i9BWwZFlR0hLekIOqQwAFx3OOEoRoPWNzS9wdUteDQD0695n6b6YNxw==",
+      "path": "syncfusion.licensing/19.2.0.47",
+      "hashPath": "syncfusion.licensing.19.2.0.47.nupkg.sha512"
     },
-    "Syncfusion.Xamarin.Core/19.1.0.65": {
+    "Syncfusion.Xamarin.Core/19.2.0.47": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-6XJiJKYZBr5QHZLrPMcqCac1EIou33xZmqoBxECtAIxOF/PgMSb/qgO2YlBp5TlAyHDCW65kn3KVPgyRaoHsww==",
-      "path": "syncfusion.xamarin.core/19.1.0.65",
-      "hashPath": "syncfusion.xamarin.core.19.1.0.65.nupkg.sha512"
+      "sha512": "sha512-scy/jQTrIrBanNv+Btb2rO8BTUP4JzUJIuyv3/MHIuVT1l+gucdkAo6ihYGj40WMipChK+iLOq6z4OOW94z4/w==",
+      "path": "syncfusion.xamarin.core/19.2.0.47",
+      "hashPath": "syncfusion.xamarin.core.19.2.0.47.nupkg.sha512"
     },
-    "Syncfusion.Xamarin.SfCalendar/19.1.0.65": {
+    "Syncfusion.Xamarin.SfCalendar/19.2.0.47": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-MlGblbEF6myOxj26//bt+2puJj1Dm8Dr5MRaldJYzJ5qTR9FgHePlDSeA5Zy8DgsdDp2uIKUjY7dXMHi8JCixQ==",
-      "path": "syncfusion.xamarin.sfcalendar/19.1.0.65",
-      "hashPath": "syncfusion.xamarin.sfcalendar.19.1.0.65.nupkg.sha512"
+      "sha512": "sha512-LTSwYFBlT6KRx41bbCQCWNNPEIDfRouAv3NBzFQ/KhVYMukeLig834bQaDzv9MrDQyPgv9zUCIi81nU8lnWYEA==",
+      "path": "syncfusion.xamarin.sfcalendar/19.2.0.47",
+      "hashPath": "syncfusion.xamarin.sfcalendar.19.2.0.47.nupkg.sha512"
     },
     "System.Buffers/4.4.0": {
       "type": "package",
@@ -410,26 +432,33 @@
       "path": "system.threading.tasks.extensions/4.5.4",
       "hashPath": "system.threading.tasks.extensions.4.5.4.nupkg.sha512"
     },
-    "Xamarin.CommunityToolkit/1.1.0": {
+    "Xam.Plugins.Notifier/3.0.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-GJiaXaPLrM1qn1HYxDPKlECYAzX5CI6FKtv4NXCq8K7SJTscmFo79RcwZoj1o3de+4V0aiJAVZMCpbMIF/sZVA==",
-      "path": "xamarin.communitytoolkit/1.1.0",
-      "hashPath": "xamarin.communitytoolkit.1.1.0.nupkg.sha512"
+      "sha512": "sha512-QH/+zX9w/hMg1AOAj+a62cIJIqd4tSOSBnGGprHIhfJWHG+v+P6VvIqZSTr9z1dZDd2JfhA7Iz2KGBr4MJ2lOQ==",
+      "path": "xam.plugins.notifier/3.0.1",
+      "hashPath": "xam.plugins.notifier.3.0.1.nupkg.sha512"
     },
-    "Xamarin.Essentials/1.6.1": {
+    "Xamarin.CommunityToolkit/1.2.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-gG1Bp4j4bpJQ0dp9MeBJQJ9c8xULauIlhc7Cx5Qw4J2K1c+4Glq5n+gkb9Pm0UA/CevXVqLK5ZXmZkuYI52FgA==",
-      "path": "xamarin.essentials/1.6.1",
-      "hashPath": "xamarin.essentials.1.6.1.nupkg.sha512"
+      "sha512": "sha512-N2f4a0MmdRTx2QyxtcEeoV0yVXNblIhs9H2NED0v+YNn42AaRnw1WN4sG+Okw8jOkc3iyMkrVtn6EjzE29EjmQ==",
+      "path": "xamarin.communitytoolkit/1.2.0",
+      "hashPath": "xamarin.communitytoolkit.1.2.0.nupkg.sha512"
     },
-    "Xamarin.Forms/5.0.0.2012": {
+    "Xamarin.Essentials/1.7.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Rqc6xvWR/sf+Db5+qRCFmuYTWVp04QWRfwPto2/JHbShSy4Ed53Q2jpoFzsoloXkJA6saD236PlaWAhT6vI4gw==",
-      "path": "xamarin.forms/5.0.0.2012",
-      "hashPath": "xamarin.forms.5.0.0.2012.nupkg.sha512"
+      "sha512": "sha512-xfUJNxtfMC05VBej7fVUg6Zd9VwM2kqW9LH0tcrSA6IsBTl0EsIGkYUOz1BoKT2rseWW8o3kTi5WH/yZV4GgJw==",
+      "path": "xamarin.essentials/1.7.0",
+      "hashPath": "xamarin.essentials.1.7.0.nupkg.sha512"
+    },
+    "Xamarin.Forms/5.0.0.2083": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-KDKdEIq8SA3zP8/qyJZ9isIsP1KRLvhxUohTM4GS4HOQkkK3FARvi/FJv91O4IJ/30ByJg88mBdKuiLMyL9Q+w==",
+      "path": "xamarin.forms/5.0.0.2083",
+      "hashPath": "xamarin.forms.5.0.0.2083.nupkg.sha512"
     },
     "Xamarin.Forms.PancakeView/2.3.0.759": {
       "type": "package",
@@ -437,6 +466,11 @@
       "sha512": "sha512-TGVsLJuGd/PKlyhmcBxZnHhHqyhYppzyrdb2q/sy+S6dQYkeGM8A+HmIIHVhbi7r8Sjasa/HRBkOmTSYQOZzhQ==",
       "path": "xamarin.forms.pancakeview/2.3.0.759",
       "hashPath": "xamarin.forms.pancakeview.2.3.0.759.nupkg.sha512"
+    },
+    "Xamarin.AndroidX.Core/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

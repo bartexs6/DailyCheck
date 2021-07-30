@@ -11,6 +11,21 @@
             </Grid.RowDefinitions>
             <StackLayout Grid.Row="0" >
                 <syncfusion:SfCalendar ShowYearView="false" BlackoutDatesViewMode="Stripes" ViewMode="MonthView" MinDate="{Binding MinDate}" MaxDate="{Binding MaxDate}" BlackoutDates="{Binding DoneChecks}" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                    <syncfusion:SfCalendar.HeaderView>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="1*"/>
+                                <ColumnDefinition Width="20*"/>
+                                <ColumnDefinition Width="5*"/>
+                            </Grid.ColumnDefinitions>
+                            <Label Text="{Binding Month}" FontSize="Large" Margin="10,0,0,0" Grid.Column="1" TextColor="Gray" VerticalTextAlignment="Center"/>
+                            <ImageButton Grid.Column="2"
+                             Source="ExitArrow.png"
+                                         Scale="0.2"
+                                         BackgroundColor="Transparent"
+                             Command="{Binding BackButtonClicked}"/>
+                        </Grid>
+                    </syncfusion:SfCalendar.HeaderView>
                     <syncfusion:SfCalendar.MonthViewSettings>
                         <syncfusion:MonthViewSettings HeaderBackgroundColor="white"
                                                       BlackoutColor="Green" 
@@ -28,48 +43,58 @@
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="1*"/>
-                    <ColumnDefinition Width="40*"/>
+                    <ColumnDefinition Width="60*"/>
                 </Grid.ColumnDefinitions>
 
                 <Label Text="{Binding Today}" Margin="0,0,0,0" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" HorizontalTextAlignment="Center" BackgroundColor="white"></Label>
 
                 <BoxView BackgroundColor="{Binding BackgroundColor}" Grid.Row="1" Grid.Column="0"></BoxView>
-                <Label Text="{Binding CheckMark.Name}" Padding="10,0,0,0" BackgroundColor="{Binding TextBackgroundColor}" Grid.Row="1" Grid.Column="1" VerticalTextAlignment="Center"></Label>
+                <Label Text="{Binding CheckMark.Name}" TextColor="{Binding BackgroundColor}" FontSize="Subtitle" Padding="10,0,0,0" BackgroundColor="{Binding TextBackgroundColor}" Grid.Row="1" Grid.Column="1" VerticalTextAlignment="Center"></Label>
 
                 <Label Text="Other" Margin="0,0,0,0" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2"  HorizontalTextAlignment="Center" BackgroundColor="white"></Label>
 
                 <ScrollView  Grid.Row="3" Grid.Column="0" VerticalScrollBarVisibility="Never" Grid.ColumnSpan="2">
+                    <StackLayout BindableLayout.ItemsSource="{Binding ScrollCheckMarkList}">
+
+                        <BindableLayout.ItemTemplate>
+                            <DataTemplate>
+                                <Grid ColumnSpacing="0" RowSpacing="4" >
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="1*"/>
+                                        <ColumnDefinition Width="60*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="auto" />
+                                    </Grid.RowDefinitions>
+                                    <BoxView BackgroundColor="{Binding OBackgroundColor}" Grid.Column="0"></BoxView>
+                                    <Label Text="{Binding OName}" Padding="10,0,0,0" TextColor="{Binding OBackgroundColor}" FontSize="Subtitle" BackgroundColor="{Binding OTextBackgroundColor}" Grid.Column="1" VerticalTextAlignment="Center"></Label>
+                                </Grid>
+                            </DataTemplate>
+                        </BindableLayout.ItemTemplate>
+
+                    </StackLayout>
+                </ScrollView>
+
+
+                <!--<ScrollView  Grid.Row="3" Grid.Column="0" VerticalScrollBarVisibility="Never" Grid.ColumnSpan="2">
                     <Grid ColumnSpacing="0" RowSpacing="4">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="1*"/>
-                            <ColumnDefinition Width="40*"/>
+                            <ColumnDefinition Width="60*"/>
                         </Grid.ColumnDefinitions>
-
                         <BoxView BackgroundColor="DarkRed" Grid.Row="0" Grid.Column="0"></BoxView>
-                        <Label Text="Test" Padding="10,0,0,0" BackgroundColor="IndianRed" Grid.Row="0" Grid.Column="1" VerticalTextAlignment="Center"></Label>
-
+                        <Label Text="Test" Padding="10,0,0,0" TextColor="DarkRed" FontSize="Subtitle" BackgroundColor="IndianRed" Grid.Row="0" Grid.Column="1" VerticalTextAlignment="Center"></Label>
                         <BoxView BackgroundColor="Green" Grid.Row="1" Grid.Column="0"></BoxView>
-                        <Label Text="Test" Padding="10,0,0,0" BackgroundColor="LightGreen" Grid.Row="1" Grid.Column="1" VerticalTextAlignment="Center"></Label>
-
+                        <Label Text="Test" Padding="10,0,0,0" FontSize="Subtitle" TextColor="Green" BackgroundColor="LightGreen" Grid.Row="1" Grid.Column="1" VerticalTextAlignment="Center"></Label>
                         <BoxView BackgroundColor="Green" Grid.Row="2" Grid.Column="0"></BoxView>
-                        <Label Text="Test" Padding="10,0,0,0" BackgroundColor="LightGreen" Grid.Row="2" Grid.Column="1" VerticalTextAlignment="Center"></Label>
+                        <Label Text="Test" Padding="10,0,0,0" FontSize="Subtitle" TextColor="Green" BackgroundColor="LightGreen" Grid.Row="2" Grid.Column="1" VerticalTextAlignment="Center"></Label>
+                        <BoxView BackgroundColor="Green" Grid.Row="3" Grid.Column="0"></BoxView>
+                        <Label Text="Test" Padding="10,0,0,0" FontSize="Subtitle" TextColor="Green" BackgroundColor="LightGreen" Grid.Row="3" Grid.Column="1" VerticalTextAlignment="Center"></Label>
+                        <BoxView BackgroundColor="Green" Grid.Row="4" Grid.Column="0"></BoxView>
+                        <Label Text="Test" Padding="10,0,0,0" FontSize="Subtitle" TextColor="Green" BackgroundColor="LightGreen" Grid.Row="4" Grid.Column="1" VerticalTextAlignment="Center"></Label>
                     </Grid>
-                </ScrollView>
+                </ScrollView>-->
             </Grid>
-
-            <AbsoluteLayout>
-                <Label
-                 AbsoluteLayout.LayoutBounds="0.5,0.04,180,30"
-                 AbsoluteLayout.LayoutFlags="PositionProportional" 
-                    Text="Developer mode" FontSize="Large" TextColor="Red"/>
-
-                <ImageButton AbsoluteLayout.LayoutBounds="0.78, 0.05, 25, 25"
-                        AbsoluteLayout.LayoutFlags="PositionProportional"
-                        Source="ExitArrow.png" Aspect="AspectFit" 
-                             BackgroundColor="Red"
-                             Clicked="Back_Button"/>
-            </AbsoluteLayout>
-
         </Grid>
     </ContentPage.Content>
 </ContentPage>

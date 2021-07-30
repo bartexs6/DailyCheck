@@ -16,7 +16,7 @@
 
 	/* 1: DailyCheck.dll */
 	/* uncompressed_file_size */
-	.long	56320
+	.long	61952
 	/* loaded */
 	.byte	0
 	/* data */
@@ -34,7 +34,7 @@
 
 	/* 3: Java.Interop.dll */
 	/* uncompressed_file_size */
-	.long	165376
+	.long	164864
 	/* loaded */
 	.byte	0
 	/* data */
@@ -43,7 +43,7 @@
 
 	/* 4: Lottie.Android.dll */
 	/* uncompressed_file_size */
-	.long	485888
+	.long	487424
 	/* loaded */
 	.byte	0
 	/* data */
@@ -52,7 +52,7 @@
 
 	/* 5: Lottie.Forms.dll */
 	/* uncompressed_file_size */
-	.long	148992
+	.long	149504
 	/* loaded */
 	.byte	0
 	/* data */
@@ -61,7 +61,7 @@
 
 	/* 6: Mono.Android.dll */
 	/* uncompressed_file_size */
-	.long	2398208
+	.long	2406912
 	/* loaded */
 	.byte	0
 	/* data */
@@ -151,7 +151,7 @@
 
 	/* 16: Syncfusion.Licensing.dll */
 	/* uncompressed_file_size */
-	.long	47616
+	.long	48128
 	/* loaded */
 	.byte	0
 	/* data */
@@ -178,7 +178,7 @@
 
 	/* 19: System.Buffers.dll */
 	/* uncompressed_file_size */
-	.long	13712
+	.long	13688
 	/* loaded */
 	.byte	0
 	/* data */
@@ -187,7 +187,7 @@
 
 	/* 20: System.Core.dll */
 	/* uncompressed_file_size */
-	.long	327168
+	.long	326656
 	/* loaded */
 	.byte	0
 	/* data */
@@ -268,471 +268,273 @@
 
 	/* 29: Xamarin.AndroidX.Activity.dll */
 	/* uncompressed_file_size */
-	.long	18944
+	.long	17408
 	/* loaded */
 	.byte	0
 	/* data */
 	.zero	3
 	.long	compressed_assembly_data_29
 
-	/* 30: Xamarin.AndroidX.Annotation.Experimental.dll */
+	/* 30: Xamarin.AndroidX.AppCompat.AppCompatResources.dll */
 	/* uncompressed_file_size */
-	.long	6144
+	.long	15872
 	/* loaded */
 	.byte	0
 	/* data */
 	.zero	3
 	.long	compressed_assembly_data_30
 
-	/* 31: Xamarin.AndroidX.Annotation.dll */
+	/* 31: Xamarin.AndroidX.AppCompat.dll */
 	/* uncompressed_file_size */
-	.long	6144
+	.long	463360
 	/* loaded */
 	.byte	0
 	/* data */
 	.zero	3
 	.long	compressed_assembly_data_31
 
-	/* 32: Xamarin.AndroidX.AppCompat.AppCompatResources.dll */
+	/* 32: Xamarin.AndroidX.CardView.dll */
 	/* uncompressed_file_size */
-	.long	19456
+	.long	17408
 	/* loaded */
 	.byte	0
 	/* data */
 	.zero	3
 	.long	compressed_assembly_data_32
 
-	/* 33: Xamarin.AndroidX.AppCompat.dll */
+	/* 33: Xamarin.AndroidX.Collection.dll */
 	/* uncompressed_file_size */
-	.long	484864
+	.long	31744
 	/* loaded */
 	.byte	0
 	/* data */
 	.zero	3
 	.long	compressed_assembly_data_33
 
-	/* 34: Xamarin.AndroidX.Arch.Core.Common.dll */
+	/* 34: Xamarin.AndroidX.CoordinatorLayout.dll */
 	/* uncompressed_file_size */
-	.long	6656
+	.long	78848
 	/* loaded */
 	.byte	0
 	/* data */
 	.zero	3
 	.long	compressed_assembly_data_34
 
-	/* 35: Xamarin.AndroidX.Arch.Core.Runtime.dll */
+	/* 35: Xamarin.AndroidX.Core.dll */
 	/* uncompressed_file_size */
-	.long	6144
+	.long	523776
 	/* loaded */
 	.byte	0
 	/* data */
 	.zero	3
 	.long	compressed_assembly_data_35
 
-	/* 36: Xamarin.AndroidX.AsyncLayoutInflater.dll */
+	/* 36: Xamarin.AndroidX.CustomView.dll */
 	/* uncompressed_file_size */
-	.long	6144
+	.long	8704
 	/* loaded */
 	.byte	0
 	/* data */
 	.zero	3
 	.long	compressed_assembly_data_36
 
-	/* 37: Xamarin.AndroidX.Browser.dll */
+	/* 37: Xamarin.AndroidX.DrawerLayout.dll */
 	/* uncompressed_file_size */
-	.long	18432
+	.long	43520
 	/* loaded */
 	.byte	0
 	/* data */
 	.zero	3
 	.long	compressed_assembly_data_37
 
-	/* 38: Xamarin.AndroidX.CardView.dll */
+	/* 38: Xamarin.AndroidX.Fragment.dll */
 	/* uncompressed_file_size */
-	.long	18432
+	.long	158208
 	/* loaded */
 	.byte	0
 	/* data */
 	.zero	3
 	.long	compressed_assembly_data_38
 
-	/* 39: Xamarin.AndroidX.Collection.dll */
+	/* 39: Xamarin.AndroidX.Legacy.Support.Core.UI.dll */
 	/* uncompressed_file_size */
-	.long	33280
+	.long	15360
 	/* loaded */
 	.byte	0
 	/* data */
 	.zero	3
 	.long	compressed_assembly_data_39
 
-	/* 40: Xamarin.AndroidX.CoordinatorLayout.dll */
+	/* 40: Xamarin.AndroidX.Lifecycle.Common.dll */
 	/* uncompressed_file_size */
-	.long	80896
+	.long	14848
 	/* loaded */
 	.byte	0
 	/* data */
 	.zero	3
 	.long	compressed_assembly_data_40
 
-	/* 41: Xamarin.AndroidX.Core.dll */
+	/* 41: Xamarin.AndroidX.Lifecycle.LiveData.Core.dll */
 	/* uncompressed_file_size */
-	.long	573440
+	.long	15872
 	/* loaded */
 	.byte	0
 	/* data */
 	.zero	3
 	.long	compressed_assembly_data_41
 
-	/* 42: Xamarin.AndroidX.CursorAdapter.dll */
+	/* 42: Xamarin.AndroidX.Lifecycle.ViewModel.dll */
 	/* uncompressed_file_size */
-	.long	6656
+	.long	16896
 	/* loaded */
 	.byte	0
 	/* data */
 	.zero	3
 	.long	compressed_assembly_data_42
 
-	/* 43: Xamarin.AndroidX.CustomView.dll */
+	/* 43: Xamarin.AndroidX.Loader.dll */
 	/* uncompressed_file_size */
-	.long	10240
+	.long	36352
 	/* loaded */
 	.byte	0
 	/* data */
 	.zero	3
 	.long	compressed_assembly_data_43
 
-	/* 44: Xamarin.AndroidX.DocumentFile.dll */
+	/* 44: Xamarin.AndroidX.RecyclerView.dll */
 	/* uncompressed_file_size */
-	.long	6144
+	.long	411136
 	/* loaded */
 	.byte	0
 	/* data */
 	.zero	3
 	.long	compressed_assembly_data_44
 
-	/* 45: Xamarin.AndroidX.DrawerLayout.dll */
+	/* 45: Xamarin.AndroidX.SavedState.dll */
 	/* uncompressed_file_size */
-	.long	45056
+	.long	12800
 	/* loaded */
 	.byte	0
 	/* data */
 	.zero	3
 	.long	compressed_assembly_data_45
 
-	/* 46: Xamarin.AndroidX.Fragment.dll */
+	/* 46: Xamarin.AndroidX.SwipeRefreshLayout.dll */
 	/* uncompressed_file_size */
-	.long	162304
+	.long	39936
 	/* loaded */
 	.byte	0
 	/* data */
 	.zero	3
 	.long	compressed_assembly_data_46
 
-	/* 47: Xamarin.AndroidX.Interpolator.dll */
+	/* 47: Xamarin.AndroidX.ViewPager.dll */
 	/* uncompressed_file_size */
-	.long	6656
+	.long	57344
 	/* loaded */
 	.byte	0
 	/* data */
 	.zero	3
 	.long	compressed_assembly_data_47
 
-	/* 48: Xamarin.AndroidX.Legacy.Support.Core.UI.dll */
+	/* 48: Xamarin.CommunityToolkit.dll */
 	/* uncompressed_file_size */
-	.long	16896
+	.long	366592
 	/* loaded */
 	.byte	0
 	/* data */
 	.zero	3
 	.long	compressed_assembly_data_48
 
-	/* 49: Xamarin.AndroidX.Legacy.Support.Core.Utils.dll */
-	/* uncompressed_file_size */
-	.long	6144
-	/* loaded */
-	.byte	0
-	/* data */
-	.zero	3
-	.long	compressed_assembly_data_49
-
-	/* 50: Xamarin.AndroidX.Lifecycle.Common.dll */
-	/* uncompressed_file_size */
-	.long	16384
-	/* loaded */
-	.byte	0
-	/* data */
-	.zero	3
-	.long	compressed_assembly_data_50
-
-	/* 51: Xamarin.AndroidX.Lifecycle.LiveData.Core.dll */
-	/* uncompressed_file_size */
-	.long	16896
-	/* loaded */
-	.byte	0
-	/* data */
-	.zero	3
-	.long	compressed_assembly_data_51
-
-	/* 52: Xamarin.AndroidX.Lifecycle.LiveData.dll */
-	/* uncompressed_file_size */
-	.long	6144
-	/* loaded */
-	.byte	0
-	/* data */
-	.zero	3
-	.long	compressed_assembly_data_52
-
-	/* 53: Xamarin.AndroidX.Lifecycle.Runtime.dll */
-	/* uncompressed_file_size */
-	.long	6144
-	/* loaded */
-	.byte	0
-	/* data */
-	.zero	3
-	.long	compressed_assembly_data_53
-
-	/* 54: Xamarin.AndroidX.Lifecycle.ViewModel.dll */
-	/* uncompressed_file_size */
-	.long	18432
-	/* loaded */
-	.byte	0
-	/* data */
-	.zero	3
-	.long	compressed_assembly_data_54
-
-	/* 55: Xamarin.AndroidX.Lifecycle.ViewModelSavedState.dll */
-	/* uncompressed_file_size */
-	.long	6144
-	/* loaded */
-	.byte	0
-	/* data */
-	.zero	3
-	.long	compressed_assembly_data_55
-
-	/* 56: Xamarin.AndroidX.Loader.dll */
-	/* uncompressed_file_size */
-	.long	37888
-	/* loaded */
-	.byte	0
-	/* data */
-	.zero	3
-	.long	compressed_assembly_data_56
-
-	/* 57: Xamarin.AndroidX.LocalBroadcastManager.dll */
-	/* uncompressed_file_size */
-	.long	6144
-	/* loaded */
-	.byte	0
-	/* data */
-	.zero	3
-	.long	compressed_assembly_data_57
-
-	/* 58: Xamarin.AndroidX.Media.dll */
-	/* uncompressed_file_size */
-	.long	11776
-	/* loaded */
-	.byte	0
-	/* data */
-	.zero	3
-	.long	compressed_assembly_data_58
-
-	/* 59: Xamarin.AndroidX.Print.dll */
-	/* uncompressed_file_size */
-	.long	5632
-	/* loaded */
-	.byte	0
-	/* data */
-	.zero	3
-	.long	compressed_assembly_data_59
-
-	/* 60: Xamarin.AndroidX.RecyclerView.dll */
-	/* uncompressed_file_size */
-	.long	425984
-	/* loaded */
-	.byte	0
-	/* data */
-	.zero	3
-	.long	compressed_assembly_data_60
-
-	/* 61: Xamarin.AndroidX.SavedState.dll */
-	/* uncompressed_file_size */
-	.long	13824
-	/* loaded */
-	.byte	0
-	/* data */
-	.zero	3
-	.long	compressed_assembly_data_61
-
-	/* 62: Xamarin.AndroidX.SlidingPaneLayout.dll */
-	/* uncompressed_file_size */
-	.long	6656
-	/* loaded */
-	.byte	0
-	/* data */
-	.zero	3
-	.long	compressed_assembly_data_62
-
-	/* 63: Xamarin.AndroidX.SwipeRefreshLayout.dll */
-	/* uncompressed_file_size */
-	.long	40960
-	/* loaded */
-	.byte	0
-	/* data */
-	.zero	3
-	.long	compressed_assembly_data_63
-
-	/* 64: Xamarin.AndroidX.Transition.dll */
-	/* uncompressed_file_size */
-	.long	9728
-	/* loaded */
-	.byte	0
-	/* data */
-	.zero	3
-	.long	compressed_assembly_data_64
-
-	/* 65: Xamarin.AndroidX.VectorDrawable.Animated.dll */
-	/* uncompressed_file_size */
-	.long	7680
-	/* loaded */
-	.byte	0
-	/* data */
-	.zero	3
-	.long	compressed_assembly_data_65
-
-	/* 66: Xamarin.AndroidX.VectorDrawable.dll */
-	/* uncompressed_file_size */
-	.long	6144
-	/* loaded */
-	.byte	0
-	/* data */
-	.zero	3
-	.long	compressed_assembly_data_66
-
-	/* 67: Xamarin.AndroidX.VersionedParcelable.dll */
-	/* uncompressed_file_size */
-	.long	6656
-	/* loaded */
-	.byte	0
-	/* data */
-	.zero	3
-	.long	compressed_assembly_data_67
-
-	/* 68: Xamarin.AndroidX.ViewPager.dll */
-	/* uncompressed_file_size */
-	.long	59392
-	/* loaded */
-	.byte	0
-	/* data */
-	.zero	3
-	.long	compressed_assembly_data_68
-
-	/* 69: Xamarin.AndroidX.ViewPager2.dll */
-	/* uncompressed_file_size */
-	.long	7168
-	/* loaded */
-	.byte	0
-	/* data */
-	.zero	3
-	.long	compressed_assembly_data_69
-
-	/* 70: Xamarin.CommunityToolkit.dll */
-	/* uncompressed_file_size */
-	.long	353792
-	/* loaded */
-	.byte	0
-	/* data */
-	.zero	3
-	.long	compressed_assembly_data_70
-
-	/* 71: Xamarin.Essentials.dll */
+	/* 49: Xamarin.Essentials.dll */
 	/* uncompressed_file_size */
 	.long	26112
 	/* loaded */
 	.byte	0
 	/* data */
 	.zero	3
-	.long	compressed_assembly_data_71
+	.long	compressed_assembly_data_49
 
-	/* 72: Xamarin.Forms.Core.dll */
+	/* 50: Xamarin.Forms.Core.dll */
 	/* uncompressed_file_size */
 	.long	1204224
 	/* loaded */
 	.byte	0
 	/* data */
 	.zero	3
-	.long	compressed_assembly_data_72
+	.long	compressed_assembly_data_50
 
-	/* 73: Xamarin.Forms.PancakeView.dll */
+	/* 51: Xamarin.Forms.PancakeView.dll */
 	/* uncompressed_file_size */
 	.long	152064
 	/* loaded */
 	.byte	0
 	/* data */
 	.zero	3
-	.long	compressed_assembly_data_73
+	.long	compressed_assembly_data_51
 
-	/* 74: Xamarin.Forms.Platform.Android.dll */
+	/* 52: Xamarin.Forms.Platform.Android.dll */
 	/* uncompressed_file_size */
 	.long	858112
 	/* loaded */
 	.byte	0
 	/* data */
 	.zero	3
-	.long	compressed_assembly_data_74
+	.long	compressed_assembly_data_52
 
-	/* 75: Xamarin.Forms.Platform.dll */
+	/* 53: Xamarin.Forms.Platform.dll */
 	/* uncompressed_file_size */
 	.long	178176
 	/* loaded */
 	.byte	0
 	/* data */
 	.zero	3
-	.long	compressed_assembly_data_75
+	.long	compressed_assembly_data_53
 
-	/* 76: Xamarin.Forms.Xaml.dll */
+	/* 54: Xamarin.Forms.Xaml.dll */
 	/* uncompressed_file_size */
 	.long	103424
 	/* loaded */
 	.byte	0
 	/* data */
 	.zero	3
-	.long	compressed_assembly_data_76
+	.long	compressed_assembly_data_54
 
-	/* 77: Xamarin.Google.Android.Material.dll */
+	/* 55: Xamarin.Google.Android.Material.dll */
 	/* uncompressed_file_size */
-	.long	298496
+	.long	232960
 	/* loaded */
 	.byte	0
 	/* data */
 	.zero	3
-	.long	compressed_assembly_data_77
+	.long	compressed_assembly_data_55
 
-	/* 78: Xamarin.Google.Guava.ListenableFuture.dll */
+	/* 56: Xamarin.Google.Guava.ListenableFuture.dll */
 	/* uncompressed_file_size */
 	.long	18072
 	/* loaded */
 	.byte	0
 	/* data */
 	.zero	3
-	.long	compressed_assembly_data_78
+	.long	compressed_assembly_data_56
 
-	/* 79: mscorlib.dll */
+	/* 57: mscorlib.dll */
 	/* uncompressed_file_size */
-	.long	2066432
+	.long	2066944
 	/* loaded */
 	.byte	0
 	/* data */
 	.zero	3
-	.long	compressed_assembly_data_79
+	.long	compressed_assembly_data_57
 
-	.size	.L.compressed_assembly_descriptors, 960
+	.size	.L.compressed_assembly_descriptors, 696
 	.section	.data.compressed_assemblies,"aw",@progbits
 	.type	compressed_assemblies, @object
 	.p2align	2
 	.global	compressed_assemblies
 compressed_assemblies:
 	/* count */
-	.long	80
+	.long	58
 	/* descriptors */
 	.long	.L.compressed_assembly_descriptors
 	.size	compressed_assemblies, 8

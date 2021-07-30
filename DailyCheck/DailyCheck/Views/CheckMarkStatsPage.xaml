@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DailyCheck.Views.CheckMarkStatsPage">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"></RowDefinition>
+                <RowDefinition Height="3*"></RowDefinition>
+                <RowDefinition Height="3*"></RowDefinition>
+                <RowDefinition Height="3*"></RowDefinition>
+
+            </Grid.RowDefinitions>
+            <Grid  Grid.Row="0" BackgroundColor="WhiteSmoke">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="20*"/>
+                    <ColumnDefinition Width="10*"/>
+                </Grid.ColumnDefinitions>
+                <Label Text="Stats" FontSize="Large" Margin="10,0,0,0" Grid.Column="1" TextColor="Gray" VerticalTextAlignment="Center"/>
+                <ImageButton Grid.Column="2"
+                             Source="ExitArrow.png"
+                                         Scale="0.2"
+                                         BackgroundColor="Transparent"
+                             Command="{Binding BackButtonClicked}"/>
+            </Grid>
+            <StackLayout Margin="10,0,0,0" Grid.Row="1">
+                <Label Text="Week" FontSize="Title"></Label>
+                <Label Text="{Binding WeekClicked}" FontSize="Caption"></Label>
+                <Label Text="Percent: NONE" FontSize="Caption"></Label>
+                <Label Text="{Binding WeekUnclicked}" FontSize="Caption"></Label>
+            </StackLayout>
+            <StackLayout Margin="10,0,0,0" Grid.Row="2">
+                <Label Text="Month" FontSize="Title"></Label>
+                <Label Text="{Binding MonthClicked}" FontSize="Caption"></Label>
+                <Label Text="Percent: NONE" FontSize="Caption"></Label>
+                <Label Text="{Binding MonthUnclicked}" FontSize="Caption"></Label>
+                </StackLayout>
+            <StackLayout Margin="10,0,0,0" Grid.Row="3">
+                <Label Text="All" FontSize="Title"></Label>
+                <Label Text="{Binding AllClicked}" FontSize="Caption"></Label>
+            <Label Text="Percent: NONE" FontSize="Caption"></Label>
+                <Label Text="{Binding AllUnclicked}" FontSize="Caption"></Label>
+                </StackLayout>
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

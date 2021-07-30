@@ -181,6 +181,7 @@ int attr lottie_colorFilter 0x0
 int attr lottie_enableMergePathsForKitKatAndAbove 0x0
 int attr lottie_fallbackRes 0x0
 int attr lottie_fileName 0x0
+int attr lottie_ignoreDisabledSystemAnimations 0x0
 int attr lottie_imageAssetsFolder 0x0
 int attr lottie_loop 0x0
 int attr lottie_progress 0x0
@@ -1442,23 +1443,24 @@ int styleable LinearLayoutCompat_Layout_android_layout_width 3
 int[] styleable ListPopupWindow { 0x10102ac, 0x10102ad }
 int styleable ListPopupWindow_android_dropDownHorizontalOffset 0
 int styleable ListPopupWindow_android_dropDownVerticalOffset 1
-int[] styleable LottieAnimationView { 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0 }
+int[] styleable LottieAnimationView { 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0 }
 int styleable LottieAnimationView_lottie_autoPlay 0
 int styleable LottieAnimationView_lottie_cacheComposition 1
 int styleable LottieAnimationView_lottie_colorFilter 2
 int styleable LottieAnimationView_lottie_enableMergePathsForKitKatAndAbove 3
 int styleable LottieAnimationView_lottie_fallbackRes 4
 int styleable LottieAnimationView_lottie_fileName 5
-int styleable LottieAnimationView_lottie_imageAssetsFolder 6
-int styleable LottieAnimationView_lottie_loop 7
-int styleable LottieAnimationView_lottie_progress 8
-int styleable LottieAnimationView_lottie_rawRes 9
-int styleable LottieAnimationView_lottie_renderMode 10
-int styleable LottieAnimationView_lottie_repeatCount 11
-int styleable LottieAnimationView_lottie_repeatMode 12
-int styleable LottieAnimationView_lottie_scale 13
-int styleable LottieAnimationView_lottie_speed 14
-int styleable LottieAnimationView_lottie_url 15
+int styleable LottieAnimationView_lottie_ignoreDisabledSystemAnimations 6
+int styleable LottieAnimationView_lottie_imageAssetsFolder 7
+int styleable LottieAnimationView_lottie_loop 8
+int styleable LottieAnimationView_lottie_progress 9
+int styleable LottieAnimationView_lottie_rawRes 10
+int styleable LottieAnimationView_lottie_renderMode 11
+int styleable LottieAnimationView_lottie_repeatCount 12
+int styleable LottieAnimationView_lottie_repeatMode 13
+int styleable LottieAnimationView_lottie_scale 14
+int styleable LottieAnimationView_lottie_speed 15
+int styleable LottieAnimationView_lottie_url 16
 int[] styleable MenuGroup { 0x10101e0, 0x101000e, 0x10100d0, 0x10101de, 0x10101df, 0x1010194 }
 int styleable MenuGroup_android_checkableBehavior 0
 int styleable MenuGroup_android_enabled 1

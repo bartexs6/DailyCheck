@@ -2,7 +2,6 @@ C:\Users\PC\source\repos\DailyCheck\DailyCheck\DailyCheck\bin\Release\netstandar
 C:\Users\PC\source\repos\DailyCheck\DailyCheck\DailyCheck\bin\Release\netstandard2.0\DailyCheck.dll
 C:\Users\PC\source\repos\DailyCheck\DailyCheck\DailyCheck\bin\Release\netstandard2.0\ref\DailyCheck.dll
 C:\Users\PC\source\repos\DailyCheck\DailyCheck\DailyCheck\bin\Release\netstandard2.0\DailyCheck.pdb
-C:\Users\PC\source\repos\DailyCheck\DailyCheck\DailyCheck\obj\Release\netstandard2.0\DailyCheck.csprojAssemblyReference.cache
 C:\Users\PC\source\repos\DailyCheck\DailyCheck\DailyCheck\obj\Release\netstandard2.0\App.xaml.g.cs
 C:\Users\PC\source\repos\DailyCheck\DailyCheck\DailyCheck\obj\Release\netstandard2.0\Views\CheckMarkPage.xaml.g.cs
 C:\Users\PC\source\repos\DailyCheck\DailyCheck\DailyCheck\obj\Release\netstandard2.0\Views\EditCheckMarkPage.xaml.g.cs
@@ -16,5 +15,6 @@ C:\Users\PC\source\repos\DailyCheck\DailyCheck\DailyCheck\obj\Release\netstandar
 C:\Users\PC\source\repos\DailyCheck\DailyCheck\DailyCheck\obj\Release\netstandard2.0\DailyCheck.dll
 C:\Users\PC\source\repos\DailyCheck\DailyCheck\DailyCheck\obj\Release\netstandard2.0\ref\DailyCheck.dll
 C:\Users\PC\source\repos\DailyCheck\DailyCheck\DailyCheck\obj\Release\netstandard2.0\DailyCheck.pdb
-C:\Users\PC\source\repos\DailyCheck\DailyCheck\DailyCheck\obj\Release\netstandard2.0\Views\CheckMarkMenuPage.xaml.g.cs
 C:\Users\PC\source\repos\DailyCheck\DailyCheck\DailyCheck\obj\Release\netstandard2.0\Views\CheckMarkCalendarPage.xaml.g.cs
+C:\Users\PC\source\repos\DailyCheck\DailyCheck\DailyCheck\obj\Release\netstandard2.0\DailyCheck.csproj.AssemblyReference.cache
+C:\Users\PC\source\repos\DailyCheck\DailyCheck\DailyCheck\obj\Release\netstandard2.0\Views\CheckMarkStatsPage.xaml.g.cs
