@@ -24,6 +24,30 @@
           "lib/xamarinios10/Lottie.Forms.dll": {}
         }
       },
+      "Microsoft.Bcl.AsyncInterfaces/5.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll": {}
+        }
+      },
+      "Plugin.LocalNotification/8.0.2": {
+        "type": "package",
+        "dependencies": {
+          "System.Text.Json": "5.0.2"
+        },
+        "frameworkAssemblies": [
+          "System.Drawing.Common.dll"
+        ],
+        "compile": {
+          "lib/xamarinios10/Plugin.LocalNotification.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Plugin.LocalNotification.dll": {}
+        }
+      },
       "sqlite-net-pcl/1.7.335": {
         "type": "package",
         "dependencies": {
@@ -75,7 +99,7 @@
           "lib/netstandard2.0/SQLitePCLRaw.provider.dynamic_cdecl.dll": {}
         }
       },
-      "Syncfusion.Licensing/19.2.0.47": {
+      "Syncfusion.Licensing/19.2.0.49": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Syncfusion.Licensing.dll": {}
@@ -84,10 +108,10 @@
           "lib/Xamarin.iOS10/Syncfusion.Licensing.dll": {}
         }
       },
-      "Syncfusion.Xamarin.Core/19.2.0.47": {
+      "Syncfusion.Xamarin.Core/19.2.0.49": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "19.2.0.47",
+          "Syncfusion.Licensing": "19.2.0.49",
           "Xamarin.Forms": "4.5.0.617"
         },
         "compile": {
@@ -99,10 +123,10 @@
           "lib/Xamarin.iOS10/Syncfusion.Core.XForms.iOS.dll": {}
         }
       },
-      "Syncfusion.Xamarin.SfCalendar/19.2.0.47": {
+      "Syncfusion.Xamarin.SfCalendar/19.2.0.49": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Xamarin.Core": "19.2.0.47",
+          "Syncfusion.Xamarin.Core": "19.2.0.49",
           "Xamarin.Forms": "4.5.0.617"
         },
         "compile": {
@@ -114,7 +138,7 @@
           "lib/Xamarin.iOS10/Syncfusion.SfCalendar.XForms.iOS.dll": {}
         }
       },
-      "System.Buffers/4.4.0": {
+      "System.Buffers/4.5.1": {
         "type": "package",
         "compile": {
           "ref/netstandard2.0/System.Buffers.dll": {}
@@ -154,24 +178,37 @@
           "lib/xamarinios10/_._": {}
         }
       },
-      "System.Runtime.CompilerServices.Unsafe/4.5.2": {
+      "System.Runtime.CompilerServices.Unsafe/5.0.0": {
         "type": "package",
         "compile": {
-          "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+          "ref/netstandard2.1/System.Runtime.CompilerServices.Unsafe.dll": {}
         },
         "runtime": {
           "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
         }
       },
-      "Xam.Plugins.Notifier/3.0.1": {
+      "System.Text.Encodings.Web/5.0.1": {
         "type": "package",
         "compile": {
-          "lib/Xamarin.iOS10/Plugin.LocalNotifications.Abstractions.dll": {},
-          "lib/Xamarin.iOS10/Plugin.LocalNotifications.dll": {}
+          "lib/netstandard2.1/System.Text.Encodings.Web.dll": {}
         },
         "runtime": {
-          "lib/Xamarin.iOS10/Plugin.LocalNotifications.Abstractions.dll": {},
-          "lib/Xamarin.iOS10/Plugin.LocalNotifications.dll": {}
+          "lib/netstandard2.1/System.Text.Encodings.Web.dll": {}
+        }
+      },
+      "System.Text.Json/5.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl.AsyncInterfaces": "5.0.0",
+          "System.Buffers": "4.5.1",
+          "System.Runtime.CompilerServices.Unsafe": "5.0.0",
+          "System.Text.Encodings.Web": "5.0.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Text.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Text.Json.dll": {}
         }
       },
       "Xamarin.CommunityToolkit/1.2.0": {
@@ -350,11 +387,11 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Com.Airbnb.Xamarin.Forms.Lottie": "4.0.10",
-          "Syncfusion.Xamarin.SfCalendar": "19.2.0.47",
-          "Xam.Plugins.Notifier": "3.0.1",
+          "Plugin.LocalNotification": "8.0.2",
+          "Syncfusion.Xamarin.SfCalendar": "19.2.0.49",
           "Xamarin.CommunityToolkit": "1.2.0",
-          "Xamarin.Essentials": "1.7.0",
-          "Xamarin.Forms": "5.0.0.2083",
+          "Xamarin.Essentials": "1.6.1",
+          "Xamarin.Forms": "5.0.0.2012",
           "Xamarin.Forms.PancakeView": "2.3.0.759",
           "sqlite-net-pcl": "1.7.335"
         },
@@ -389,6 +426,30 @@
           "lib/xamarinios10/Lottie.Forms.dll": {}
         }
       },
+      "Microsoft.Bcl.AsyncInterfaces/5.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll": {}
+        }
+      },
+      "Plugin.LocalNotification/8.0.2": {
+        "type": "package",
+        "dependencies": {
+          "System.Text.Json": "5.0.2"
+        },
+        "frameworkAssemblies": [
+          "System.Drawing.Common.dll"
+        ],
+        "compile": {
+          "lib/xamarinios10/Plugin.LocalNotification.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Plugin.LocalNotification.dll": {}
+        }
+      },
       "sqlite-net-pcl/1.7.335": {
         "type": "package",
         "dependencies": {
@@ -440,7 +501,7 @@
           "lib/netstandard2.0/SQLitePCLRaw.provider.dynamic_cdecl.dll": {}
         }
       },
-      "Syncfusion.Licensing/19.2.0.47": {
+      "Syncfusion.Licensing/19.2.0.49": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Syncfusion.Licensing.dll": {}
@@ -449,10 +510,10 @@
           "lib/Xamarin.iOS10/Syncfusion.Licensing.dll": {}
         }
       },
-      "Syncfusion.Xamarin.Core/19.2.0.47": {
+      "Syncfusion.Xamarin.Core/19.2.0.49": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "19.2.0.47",
+          "Syncfusion.Licensing": "19.2.0.49",
           "Xamarin.Forms": "4.5.0.617"
         },
         "compile": {
@@ -464,10 +525,10 @@
           "lib/Xamarin.iOS10/Syncfusion.Core.XForms.iOS.dll": {}
         }
       },
-      "Syncfusion.Xamarin.SfCalendar/19.2.0.47": {
+      "Syncfusion.Xamarin.SfCalendar/19.2.0.49": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Xamarin.Core": "19.2.0.47",
+          "Syncfusion.Xamarin.Core": "19.2.0.49",
           "Xamarin.Forms": "4.5.0.617"
         },
         "compile": {
@@ -479,7 +540,7 @@
           "lib/Xamarin.iOS10/Syncfusion.SfCalendar.XForms.iOS.dll": {}
         }
       },
-      "System.Buffers/4.4.0": {
+      "System.Buffers/4.5.1": {
         "type": "package",
         "compile": {
           "ref/netstandard2.0/System.Buffers.dll": {}
@@ -519,24 +580,37 @@
           "lib/xamarinios10/_._": {}
         }
       },
-      "System.Runtime.CompilerServices.Unsafe/4.5.2": {
+      "System.Runtime.CompilerServices.Unsafe/5.0.0": {
         "type": "package",
         "compile": {
-          "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+          "ref/netstandard2.1/System.Runtime.CompilerServices.Unsafe.dll": {}
         },
         "runtime": {
           "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
         }
       },
-      "Xam.Plugins.Notifier/3.0.1": {
+      "System.Text.Encodings.Web/5.0.1": {
         "type": "package",
         "compile": {
-          "lib/Xamarin.iOS10/Plugin.LocalNotifications.Abstractions.dll": {},
-          "lib/Xamarin.iOS10/Plugin.LocalNotifications.dll": {}
+          "lib/netstandard2.1/System.Text.Encodings.Web.dll": {}
         },
         "runtime": {
-          "lib/Xamarin.iOS10/Plugin.LocalNotifications.Abstractions.dll": {},
-          "lib/Xamarin.iOS10/Plugin.LocalNotifications.dll": {}
+          "lib/netstandard2.1/System.Text.Encodings.Web.dll": {}
+        }
+      },
+      "System.Text.Json/5.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl.AsyncInterfaces": "5.0.0",
+          "System.Buffers": "4.5.1",
+          "System.Runtime.CompilerServices.Unsafe": "5.0.0",
+          "System.Text.Encodings.Web": "5.0.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Text.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Text.Json.dll": {}
         }
       },
       "Xamarin.CommunityToolkit/1.2.0": {
@@ -715,11 +789,11 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Com.Airbnb.Xamarin.Forms.Lottie": "4.0.10",
-          "Syncfusion.Xamarin.SfCalendar": "19.2.0.47",
-          "Xam.Plugins.Notifier": "3.0.1",
+          "Plugin.LocalNotification": "8.0.2",
+          "Syncfusion.Xamarin.SfCalendar": "19.2.0.49",
           "Xamarin.CommunityToolkit": "1.2.0",
-          "Xamarin.Essentials": "1.7.0",
-          "Xamarin.Forms": "5.0.0.2083",
+          "Xamarin.Essentials": "1.6.1",
+          "Xamarin.Forms": "5.0.0.2012",
           "Xamarin.Forms.PancakeView": "2.3.0.759",
           "sqlite-net-pcl": "1.7.335"
         },
@@ -754,6 +828,30 @@
           "lib/xamarinios10/Lottie.Forms.dll": {}
         }
       },
+      "Microsoft.Bcl.AsyncInterfaces/5.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll": {}
+        }
+      },
+      "Plugin.LocalNotification/8.0.2": {
+        "type": "package",
+        "dependencies": {
+          "System.Text.Json": "5.0.2"
+        },
+        "frameworkAssemblies": [
+          "System.Drawing.Common.dll"
+        ],
+        "compile": {
+          "lib/xamarinios10/Plugin.LocalNotification.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Plugin.LocalNotification.dll": {}
+        }
+      },
       "sqlite-net-pcl/1.7.335": {
         "type": "package",
         "dependencies": {
@@ -805,7 +903,7 @@
           "lib/netstandard2.0/SQLitePCLRaw.provider.dynamic_cdecl.dll": {}
         }
       },
-      "Syncfusion.Licensing/19.2.0.47": {
+      "Syncfusion.Licensing/19.2.0.49": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Syncfusion.Licensing.dll": {}
@@ -814,10 +912,10 @@
           "lib/Xamarin.iOS10/Syncfusion.Licensing.dll": {}
         }
       },
-      "Syncfusion.Xamarin.Core/19.2.0.47": {
+      "Syncfusion.Xamarin.Core/19.2.0.49": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "19.2.0.47",
+          "Syncfusion.Licensing": "19.2.0.49",
           "Xamarin.Forms": "4.5.0.617"
         },
         "compile": {
@@ -829,10 +927,10 @@
           "lib/Xamarin.iOS10/Syncfusion.Core.XForms.iOS.dll": {}
         }
       },
-      "Syncfusion.Xamarin.SfCalendar/19.2.0.47": {
+      "Syncfusion.Xamarin.SfCalendar/19.2.0.49": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Xamarin.Core": "19.2.0.47",
+          "Syncfusion.Xamarin.Core": "19.2.0.49",
           "Xamarin.Forms": "4.5.0.617"
         },
         "compile": {
@@ -844,7 +942,7 @@
           "lib/Xamarin.iOS10/Syncfusion.SfCalendar.XForms.iOS.dll": {}
         }
       },
-      "System.Buffers/4.4.0": {
+      "System.Buffers/4.5.1": {
         "type": "package",
         "compile": {
           "ref/netstandard2.0/System.Buffers.dll": {}
@@ -884,24 +982,37 @@
           "lib/xamarinios10/_._": {}
         }
       },
-      "System.Runtime.CompilerServices.Unsafe/4.5.2": {
+      "System.Runtime.CompilerServices.Unsafe/5.0.0": {
         "type": "package",
         "compile": {
-          "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+          "ref/netstandard2.1/System.Runtime.CompilerServices.Unsafe.dll": {}
         },
         "runtime": {
           "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
         }
       },
-      "Xam.Plugins.Notifier/3.0.1": {
+      "System.Text.Encodings.Web/5.0.1": {
         "type": "package",
         "compile": {
-          "lib/Xamarin.iOS10/Plugin.LocalNotifications.Abstractions.dll": {},
-          "lib/Xamarin.iOS10/Plugin.LocalNotifications.dll": {}
+          "lib/netstandard2.1/System.Text.Encodings.Web.dll": {}
         },
         "runtime": {
-          "lib/Xamarin.iOS10/Plugin.LocalNotifications.Abstractions.dll": {},
-          "lib/Xamarin.iOS10/Plugin.LocalNotifications.dll": {}
+          "lib/netstandard2.1/System.Text.Encodings.Web.dll": {}
+        }
+      },
+      "System.Text.Json/5.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl.AsyncInterfaces": "5.0.0",
+          "System.Buffers": "4.5.1",
+          "System.Runtime.CompilerServices.Unsafe": "5.0.0",
+          "System.Text.Encodings.Web": "5.0.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Text.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Text.Json.dll": {}
         }
       },
       "Xamarin.CommunityToolkit/1.2.0": {
@@ -1080,11 +1191,11 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Com.Airbnb.Xamarin.Forms.Lottie": "4.0.10",
-          "Syncfusion.Xamarin.SfCalendar": "19.2.0.47",
-          "Xam.Plugins.Notifier": "3.0.1",
+          "Plugin.LocalNotification": "8.0.2",
+          "Syncfusion.Xamarin.SfCalendar": "19.2.0.49",
           "Xamarin.CommunityToolkit": "1.2.0",
-          "Xamarin.Essentials": "1.7.0",
-          "Xamarin.Forms": "5.0.0.2083",
+          "Xamarin.Essentials": "1.6.1",
+          "Xamarin.Forms": "5.0.0.2012",
           "Xamarin.Forms.PancakeView": "2.3.0.759",
           "sqlite-net-pcl": "1.7.335"
         },
@@ -1119,6 +1230,30 @@
           "lib/xamarinios10/Lottie.Forms.dll": {}
         }
       },
+      "Microsoft.Bcl.AsyncInterfaces/5.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll": {}
+        }
+      },
+      "Plugin.LocalNotification/8.0.2": {
+        "type": "package",
+        "dependencies": {
+          "System.Text.Json": "5.0.2"
+        },
+        "frameworkAssemblies": [
+          "System.Drawing.Common.dll"
+        ],
+        "compile": {
+          "lib/xamarinios10/Plugin.LocalNotification.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Plugin.LocalNotification.dll": {}
+        }
+      },
       "sqlite-net-pcl/1.7.335": {
         "type": "package",
         "dependencies": {
@@ -1170,7 +1305,7 @@
           "lib/netstandard2.0/SQLitePCLRaw.provider.dynamic_cdecl.dll": {}
         }
       },
-      "Syncfusion.Licensing/19.2.0.47": {
+      "Syncfusion.Licensing/19.2.0.49": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Syncfusion.Licensing.dll": {}
@@ -1179,10 +1314,10 @@
           "lib/Xamarin.iOS10/Syncfusion.Licensing.dll": {}
         }
       },
-      "Syncfusion.Xamarin.Core/19.2.0.47": {
+      "Syncfusion.Xamarin.Core/19.2.0.49": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "19.2.0.47",
+          "Syncfusion.Licensing": "19.2.0.49",
           "Xamarin.Forms": "4.5.0.617"
         },
         "compile": {
@@ -1194,10 +1329,10 @@
           "lib/Xamarin.iOS10/Syncfusion.Core.XForms.iOS.dll": {}
         }
       },
-      "Syncfusion.Xamarin.SfCalendar/19.2.0.47": {
+      "Syncfusion.Xamarin.SfCalendar/19.2.0.49": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Xamarin.Core": "19.2.0.47",
+          "Syncfusion.Xamarin.Core": "19.2.0.49",
           "Xamarin.Forms": "4.5.0.617"
         },
         "compile": {
@@ -1209,7 +1344,7 @@
           "lib/Xamarin.iOS10/Syncfusion.SfCalendar.XForms.iOS.dll": {}
         }
       },
-      "System.Buffers/4.4.0": {
+      "System.Buffers/4.5.1": {
         "type": "package",
         "compile": {
           "ref/netstandard2.0/System.Buffers.dll": {}
@@ -1249,24 +1384,37 @@
           "lib/xamarinios10/_._": {}
         }
       },
-      "System.Runtime.CompilerServices.Unsafe/4.5.2": {
+      "System.Runtime.CompilerServices.Unsafe/5.0.0": {
         "type": "package",
         "compile": {
-          "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+          "ref/netstandard2.1/System.Runtime.CompilerServices.Unsafe.dll": {}
         },
         "runtime": {
           "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
         }
       },
-      "Xam.Plugins.Notifier/3.0.1": {
+      "System.Text.Encodings.Web/5.0.1": {
         "type": "package",
         "compile": {
-          "lib/Xamarin.iOS10/Plugin.LocalNotifications.Abstractions.dll": {},
-          "lib/Xamarin.iOS10/Plugin.LocalNotifications.dll": {}
+          "lib/netstandard2.1/System.Text.Encodings.Web.dll": {}
         },
         "runtime": {
-          "lib/Xamarin.iOS10/Plugin.LocalNotifications.Abstractions.dll": {},
-          "lib/Xamarin.iOS10/Plugin.LocalNotifications.dll": {}
+          "lib/netstandard2.1/System.Text.Encodings.Web.dll": {}
+        }
+      },
+      "System.Text.Json/5.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl.AsyncInterfaces": "5.0.0",
+          "System.Buffers": "4.5.1",
+          "System.Runtime.CompilerServices.Unsafe": "5.0.0",
+          "System.Text.Encodings.Web": "5.0.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Text.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Text.Json.dll": {}
         }
       },
       "Xamarin.CommunityToolkit/1.2.0": {
@@ -1445,11 +1593,11 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Com.Airbnb.Xamarin.Forms.Lottie": "4.0.10",
-          "Syncfusion.Xamarin.SfCalendar": "19.2.0.47",
-          "Xam.Plugins.Notifier": "3.0.1",
+          "Plugin.LocalNotification": "8.0.2",
+          "Syncfusion.Xamarin.SfCalendar": "19.2.0.49",
           "Xamarin.CommunityToolkit": "1.2.0",
-          "Xamarin.Essentials": "1.7.0",
-          "Xamarin.Forms": "5.0.0.2083",
+          "Xamarin.Essentials": "1.6.1",
+          "Xamarin.Forms": "5.0.0.2012",
           "Xamarin.Forms.PancakeView": "2.3.0.759",
           "sqlite-net-pcl": "1.7.335"
         },
@@ -1525,6 +1673,50 @@
         "readme.txt"
       ]
     },
+    "Microsoft.Bcl.AsyncInterfaces/5.0.0": {
+      "sha512": "W8DPQjkMScOMTtJbPwmPyj9c3zYSFGawDW3jwlBOOsnY+EzZFLgNQ/UMkK35JmkNOVPdCyPr2Tw7Vv9N+KA3ZQ==",
+      "type": "package",
+      "path": "microsoft.bcl.asyncinterfaces/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Bcl.AsyncInterfaces.dll",
+        "lib/net461/Microsoft.Bcl.AsyncInterfaces.xml",
+        "lib/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.dll",
+        "lib/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.xml",
+        "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll",
+        "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.xml",
+        "microsoft.bcl.asyncinterfaces.5.0.0.nupkg.sha512",
+        "microsoft.bcl.asyncinterfaces.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "Plugin.LocalNotification/8.0.2": {
+      "sha512": "X+DPB9rLbszGmB9F6j6WtPPk6R/FwL1nfAWKcv0XI2UFnGPSkAhca+7ZBjaPddXuKH2V8qIAdJ+xMreVtPnwOQ==",
+      "type": "package",
+      "path": "plugin.localnotification/8.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/monoandroid10.0/Plugin.LocalNotification.dll",
+        "lib/monoandroid10.0/Plugin.LocalNotification.xml",
+        "lib/monoandroid11.0/Plugin.LocalNotification.dll",
+        "lib/monoandroid11.0/Plugin.LocalNotification.xml",
+        "lib/netstandard2.0/Plugin.LocalNotification.dll",
+        "lib/netstandard2.0/Plugin.LocalNotification.xml",
+        "lib/netstandard2.1/Plugin.LocalNotification.dll",
+        "lib/netstandard2.1/Plugin.LocalNotification.xml",
+        "lib/xamarinios10/Plugin.LocalNotification.dll",
+        "lib/xamarinios10/Plugin.LocalNotification.xml",
+        "plugin.localnotification.8.0.2.nupkg.sha512",
+        "plugin.localnotification.nuspec"
+      ]
+    },
     "sqlite-net-pcl/1.7.335": {
       "sha512": "0A9YNPbp66aB+Sitxmh9lq1KDtD4+EBPfdtnYN8WenvQqh5dNgMxUV7kaEG6EXYTi4zBxcsDKpyYJzbViWJXtw==",
       "type": "package",
@@ -1581,10 +1773,10 @@
         "sqlitepclraw.provider.dynamic_cdecl.nuspec"
       ]
     },
-    "Syncfusion.Licensing/19.2.0.47": {
-      "sha512": "Sc6QdWzmRfMrCtSgmB5TaJjtZClANa7i9BWwZFlR0hLekIOqQwAFx3OOEoRoPWNzS9wdUteDQD0695n6b6YNxw==",
+    "Syncfusion.Licensing/19.2.0.49": {
+      "sha512": "HN0+d2ukdhS9MDZwHFyX5IkLNQszf4mPpCxVZh+CMGzfXcbrGnps91Pnkr6XP2t89jb3kxbJIg41PIM5/ZEX5w==",
       "type": "package",
-      "path": "syncfusion.licensing/19.2.0.47",
+      "path": "syncfusion.licensing/19.2.0.49",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1606,14 +1798,14 @@
         "lib/netstandard2.0/Syncfusion.Licensing.dll",
         "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.Licensing.dll",
         "lib/uap10.0/Syncfusion.Licensing.dll",
-        "syncfusion.licensing.19.2.0.47.nupkg.sha512",
+        "syncfusion.licensing.19.2.0.49.nupkg.sha512",
         "syncfusion.licensing.nuspec"
       ]
     },
-    "Syncfusion.Xamarin.Core/19.2.0.47": {
-      "sha512": "scy/jQTrIrBanNv+Btb2rO8BTUP4JzUJIuyv3/MHIuVT1l+gucdkAo6ihYGj40WMipChK+iLOq6z4OOW94z4/w==",
+    "Syncfusion.Xamarin.Core/19.2.0.49": {
+      "sha512": "p42SxIEt7oab5nINjkEsmVJV1cDMk9ezrGkv8VkNZ+5IOm/Uobp+5KqMsvzJxrEwgWQsLhRsPLt4YDcAWkbWtQ==",
       "type": "package",
-      "path": "syncfusion.xamarin.core/19.2.0.47",
+      "path": "syncfusion.xamarin.core/19.2.0.49",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1641,14 +1833,14 @@
         "lib/uap10.0/Syncfusion.Core.XForms.UWP/TILRenderer/ToggleIcons/ToggleVisibleIcon.xaml",
         "lib/uap10.0/Syncfusion.Core.XForms.dll",
         "lib/uap10.0/Syncfusion.Core.XForms.xml",
-        "syncfusion.xamarin.core.19.2.0.47.nupkg.sha512",
+        "syncfusion.xamarin.core.19.2.0.49.nupkg.sha512",
         "syncfusion.xamarin.core.nuspec"
       ]
     },
-    "Syncfusion.Xamarin.SfCalendar/19.2.0.47": {
-      "sha512": "LTSwYFBlT6KRx41bbCQCWNNPEIDfRouAv3NBzFQ/KhVYMukeLig834bQaDzv9MrDQyPgv9zUCIi81nU8lnWYEA==",
+    "Syncfusion.Xamarin.SfCalendar/19.2.0.49": {
+      "sha512": "0cE+PemWuXrXKJeanHujmG0J8QeyCtksxy8E8b3h2Dz47Qz5qtZ69DVMycedwn204Jpy2vn7cJ0c+Q3Szoblog==",
       "type": "package",
-      "path": "syncfusion.xamarin.sfcalendar/19.2.0.47",
+      "path": "syncfusion.xamarin.sfcalendar/19.2.0.49",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1673,30 +1865,36 @@
         "lib/uap10.0/Syncfusion.SfCalendar.XForms.UWP/Themes/Generic.xbf",
         "lib/uap10.0/Syncfusion.SfCalendar.XForms.dll",
         "lib/uap10.0/Syncfusion.SfCalendar.XForms.xml",
-        "syncfusion.xamarin.sfcalendar.19.2.0.47.nupkg.sha512",
+        "syncfusion.xamarin.sfcalendar.19.2.0.49.nupkg.sha512",
         "syncfusion.xamarin.sfcalendar.nuspec"
       ]
     },
-    "System.Buffers/4.4.0": {
-      "sha512": "AwarXzzoDwX6BgrhjoJsk6tUezZEozOT5Y9QKF94Gl4JK91I4PIIBkBco9068Y9/Dra8Dkbie99kXB8+1BaYKw==",
+    "System.Buffers/4.5.1": {
+      "sha512": "Rw7ijyl1qqRS0YQD/WycNst8hUUMgrMH4FCn1nNm27M4VxchZ1js3fVjQaANHO5f3sN4isvP4a+Met9Y4YomAg==",
       "type": "package",
-      "path": "system.buffers/4.4.0",
+      "path": "system.buffers/4.5.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Buffers.dll",
+        "lib/net461/System.Buffers.xml",
         "lib/netcoreapp2.0/_._",
         "lib/netstandard1.1/System.Buffers.dll",
         "lib/netstandard1.1/System.Buffers.xml",
         "lib/netstandard2.0/System.Buffers.dll",
         "lib/netstandard2.0/System.Buffers.xml",
+        "lib/uap10.0.16299/_._",
+        "ref/net45/System.Buffers.dll",
+        "ref/net45/System.Buffers.xml",
         "ref/netcoreapp2.0/_._",
         "ref/netstandard1.1/System.Buffers.dll",
         "ref/netstandard1.1/System.Buffers.xml",
         "ref/netstandard2.0/System.Buffers.dll",
         "ref/netstandard2.0/System.Buffers.xml",
-        "system.buffers.4.4.0.nupkg.sha512",
+        "ref/uap10.0.16299/_._",
+        "system.buffers.4.5.1.nupkg.sha512",
         "system.buffers.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
@@ -1829,64 +2027,84 @@
         "version.txt"
       ]
     },
-    "System.Runtime.CompilerServices.Unsafe/4.5.2": {
-      "sha512": "wprSFgext8cwqymChhrBLu62LMg/1u92bU+VOwyfBimSPVFXtsNqEWC92Pf9ofzJFlk4IHmJA75EDJn1b2goAQ==",
+    "System.Runtime.CompilerServices.Unsafe/5.0.0": {
+      "sha512": "ZD9TMpsmYJLrxbbmdvhwt9YEgG5WntEnZ/d1eH8JBX9LBp+Ju8BSBhUGbZMNVHHomWo2KVImJhTDl2hIgw/6MA==",
       "type": "package",
-      "path": "system.runtime.compilerservices.unsafe/4.5.2",
+      "path": "system.runtime.compilerservices.unsafe/5.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+        "Icon.png",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
+        "lib/net45/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/net45/System.Runtime.CompilerServices.Unsafe.xml",
         "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll",
         "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.xml",
         "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
         "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
         "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
         "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "ref/net461/System.Runtime.CompilerServices.Unsafe.dll",
+        "ref/net461/System.Runtime.CompilerServices.Unsafe.xml",
         "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
         "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
         "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
         "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
-        "system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
+        "ref/netstandard2.1/System.Runtime.CompilerServices.Unsafe.dll",
+        "ref/netstandard2.1/System.Runtime.CompilerServices.Unsafe.xml",
+        "system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512",
         "system.runtime.compilerservices.unsafe.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
     },
-    "Xam.Plugins.Notifier/3.0.1": {
-      "sha512": "QH/+zX9w/hMg1AOAj+a62cIJIqd4tSOSBnGGprHIhfJWHG+v+P6VvIqZSTr9z1dZDd2JfhA7Iz2KGBr4MJ2lOQ==",
+    "System.Text.Encodings.Web/5.0.1": {
+      "sha512": "KmJ+CJXizDofbq6mpqDoRRLcxgOd2z9X3XoFNULSbvbqVRZkFX3istvr+MUjL6Zw1RT+RNdoI4GYidIINtgvqQ==",
       "type": "package",
-      "path": "xam.plugins.notifier/3.0.1",
+      "path": "system.text.encodings.web/5.0.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "lib/MonoAndroid10/Plugin.LocalNotifications.Abstractions.dll",
-        "lib/MonoAndroid10/Plugin.LocalNotifications.Abstractions.xml",
-        "lib/MonoAndroid10/Plugin.LocalNotifications.XML",
-        "lib/MonoAndroid10/Plugin.LocalNotifications.dll",
-        "lib/MonoAndroid10/Plugin.LocalNotifications.pdb",
-        "lib/UAP10/Plugin.LocalNotifications.Abstractions.dll",
-        "lib/UAP10/Plugin.LocalNotifications.Abstractions.xml",
-        "lib/UAP10/Plugin.LocalNotifications.XML",
-        "lib/UAP10/Plugin.LocalNotifications.dll",
-        "lib/UAP10/Plugin.LocalNotifications.pdb",
-        "lib/UAP10/Plugin.LocalNotifications.pri",
-        "lib/Xamarin.Mac20/Plugin.LocalNotifications.Abstractions.dll",
-        "lib/Xamarin.Mac20/Plugin.LocalNotifications.Abstractions.xml",
-        "lib/Xamarin.Mac20/Plugin.LocalNotifications.dll",
-        "lib/Xamarin.Mac20/Plugin.LocalNotifications.xml",
-        "lib/Xamarin.iOS10/Plugin.LocalNotifications.Abstractions.dll",
-        "lib/Xamarin.iOS10/Plugin.LocalNotifications.Abstractions.xml",
-        "lib/Xamarin.iOS10/Plugin.LocalNotifications.XML",
-        "lib/Xamarin.iOS10/Plugin.LocalNotifications.dll",
-        "lib/netstandard1.0/Plugin.LocalNotifications.Abstractions.dll",
-        "lib/netstandard1.0/Plugin.LocalNotifications.Abstractions.xml",
-        "lib/netstandard1.0/Plugin.LocalNotifications.deps.json",
-        "lib/netstandard1.0/Plugin.LocalNotifications.dll",
-        "lib/netstandard1.0/Plugin.LocalNotifications.xml",
-        "xam.plugins.notifier.3.0.1.nupkg.sha512",
-        "xam.plugins.notifier.nuspec"
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Text.Encodings.Web.dll",
+        "lib/net461/System.Text.Encodings.Web.xml",
+        "lib/netcoreapp3.0/System.Text.Encodings.Web.dll",
+        "lib/netcoreapp3.0/System.Text.Encodings.Web.xml",
+        "lib/netstandard1.0/System.Text.Encodings.Web.dll",
+        "lib/netstandard1.0/System.Text.Encodings.Web.xml",
+        "lib/netstandard2.0/System.Text.Encodings.Web.dll",
+        "lib/netstandard2.0/System.Text.Encodings.Web.xml",
+        "lib/netstandard2.1/System.Text.Encodings.Web.dll",
+        "lib/netstandard2.1/System.Text.Encodings.Web.xml",
+        "system.text.encodings.web.5.0.1.nupkg.sha512",
+        "system.text.encodings.web.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Text.Json/5.0.2": {
+      "sha512": "I47dVIGiV6SfAyppphxqupertT/5oZkYLDCX6vC3HpOI4ZLjyoKAreUoem2ie6G0RbRuFrlqz/PcTQjfb2DOfQ==",
+      "type": "package",
+      "path": "system.text.json/5.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Text.Json.dll",
+        "lib/net461/System.Text.Json.xml",
+        "lib/netcoreapp3.0/System.Text.Json.dll",
+        "lib/netcoreapp3.0/System.Text.Json.xml",
+        "lib/netstandard2.0/System.Text.Json.dll",
+        "lib/netstandard2.0/System.Text.Json.xml",
+        "system.text.json.5.0.2.nupkg.sha512",
+        "system.text.json.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
       ]
     },
     "Xamarin.CommunityToolkit/1.2.0": {
@@ -2311,33 +2529,5 @@
         "#import": []
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1605",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Wykryto obniżenie wersji pakietu: Xamarin.Essentials z 1.7.0 na 1.6.1. Aby wybrać inną wersję, odwołaj się do pakietu bezpośrednio z projektu. \r\n DailyCheck.iOS -> DailyCheck -> Xamarin.Essentials (>= 1.7.0) \r\n DailyCheck.iOS -> Xamarin.Essentials (>= 1.6.1)",
-      "libraryId": "Xamarin.Essentials",
-      "targetGraphs": [
-        "Xamarin.iOS,Version=v1.0",
-        "Xamarin.iOS,Version=v1.0/win",
-        "Xamarin.iOS,Version=v1.0/win-x64",
-        "Xamarin.iOS,Version=v1.0/win-x86"
-      ]
-    },
-    {
-      "code": "NU1605",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Wykryto obniżenie wersji pakietu: Xamarin.Forms z 5.0.0.2083 na 5.0.0.2012. Aby wybrać inną wersję, odwołaj się do pakietu bezpośrednio z projektu. \r\n DailyCheck.iOS -> DailyCheck -> Xamarin.Forms (>= 5.0.0.2083) \r\n DailyCheck.iOS -> Xamarin.Forms (>= 5.0.0.2012)",
-      "libraryId": "Xamarin.Forms",
-      "targetGraphs": [
-        "Xamarin.iOS,Version=v1.0",
-        "Xamarin.iOS,Version=v1.0/win",
-        "Xamarin.iOS,Version=v1.0/win-x64",
-        "Xamarin.iOS,Version=v1.0/win-x86"
-      ]
-    }
-  ]
+  }
 }

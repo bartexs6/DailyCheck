@@ -1,6 +1,7 @@
 ﻿
 using DailyCheck.Models;
 using DailyCheck.Views;
+using Plugin.LocalNotification;
 using System;
 using Xamarin.Essentials;
 using Xamarin.Forms;
@@ -20,9 +21,26 @@ namespace DailyCheck
 
             MainPage = new MainCarouselPage();
             Constants.SendMessage("Development release - " + AppInfo.VersionString + " " + AppInfo.PackageName + "\nUsing MVVM Pattern");
+            //Notification();
         }
 
-        protected override void OnStart()
+
+        async void Notification()
+        {
+            var notification = new NotificationRequest
+            {
+                NotificationId = 100,
+                Title = "Daily check",
+                Description = "Have you done your daily tasks?",
+                Schedule =
+    {
+        NotifyTime = DateTime.Now.Date.AddHours(19)
+    }
+            };
+            await NotificationCenter.Current.Show(notification);
+    }
+
+    protected override void OnStart()
         {
         }
 

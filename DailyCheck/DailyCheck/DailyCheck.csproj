@@ -11,56 +11,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="ViewModels\CheckMarkCalndarViewModel.xaml.cs" />
-    <Compile Remove="ViewModels\CheckMarkCalndarViewModelDetail.xaml.cs" />
-    <Compile Remove="ViewModels\CheckMarkCalndarViewModelFlyout.xaml.cs" />
-    <Compile Remove="ViewModels\CheckMarkCalndarViewModelFlyoutMenuItem.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <EmbeddedResource Remove="ViewModels\CheckMarkCalndarViewModel.xaml" />
-    <EmbeddedResource Remove="ViewModels\CheckMarkCalndarViewModelDetail.xaml" />
-    <EmbeddedResource Remove="ViewModels\CheckMarkCalndarViewModelFlyout.xaml" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Com.Airbnb.Xamarin.Forms.Lottie" Version="4.0.10" />
+    <PackageReference Include="Plugin.LocalNotification" Version="8.0.2" />
     <PackageReference Include="sqlite-net-pcl" Version="1.7.335" />
-    <PackageReference Include="Syncfusion.Xamarin.SfCalendar" Version="19.2.0.47" />
-    <PackageReference Include="Xam.Plugins.Notifier" Version="3.0.1" />
+    <PackageReference Include="Syncfusion.Xamarin.SfCalendar" Version="19.2.0.49" />
     <PackageReference Include="Xamarin.CommunityToolkit" Version="1.2.0" />
-    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2083" />
-    <PackageReference Include="Xamarin.Essentials" Version="1.7.0" />
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
     <PackageReference Include="Xamarin.Forms.PancakeView" Version="2.3.0.759" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Reference Include="Xamarin.AndroidX.Core">
-      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Microsoft\Xamarin\NuGet\xamarin.androidx.core\1.3.2.1\lib\monoandroid90\Xamarin.AndroidX.Core.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-
-  <ItemGroup>
-    <EmbeddedResource Update="Views\CheckMarkCalendarPage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Views\CheckMarkPage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Views\CheckMarkStatsPage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Views\EditCheckMarkPage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Views\MainCarouselPage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Views\NewCheckMarkInputPage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Views\NewCheckMarkPage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
   </ItemGroup>
 </Project>

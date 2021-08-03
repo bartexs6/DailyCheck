@@ -1,6 +1,6 @@
 ﻿
 using DailyCheck.Models;
-using Plugin.LocalNotifications;
+using Plugin.LocalNotification;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,12 +25,11 @@ namespace DailyCheck.Views
                 Children.Add(newCheckMark);
             }
 
-             var lastPage = new NewCheckMarkPage();
-             Children.Add(lastPage);
+            var lastPage = new NewCheckMarkPage();
+            Children.Add(lastPage);
 
-            // var test = new NotificationCompat.Builder(this).SetAutoCancel(true).SetContentTitle("Test").SetContentText("Abc");
-            CrossLocalNotifications.Current.Show("title", "body");
 
         }
+
     }
 }

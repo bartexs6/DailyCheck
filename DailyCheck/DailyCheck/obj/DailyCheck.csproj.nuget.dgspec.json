@@ -54,13 +54,13 @@
               "version": "[2.0.3, )",
               "autoReferenced": true
             },
+            "Plugin.LocalNotification": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
             "Syncfusion.Xamarin.SfCalendar": {
               "target": "Package",
-              "version": "[19.2.0.47, )"
-            },
-            "Xam.Plugins.Notifier": {
-              "target": "Package",
-              "version": "[3.0.1, )"
+              "version": "[19.2.0.49, )"
             },
             "Xamarin.CommunityToolkit": {
               "target": "Package",
@@ -68,11 +68,11 @@
             },
             "Xamarin.Essentials": {
               "target": "Package",
-              "version": "[1.7.0, )"
+              "version": "[1.6.1, )"
             },
             "Xamarin.Forms": {
               "target": "Package",
-              "version": "[5.0.0.2083, )"
+              "version": "[5.0.0.2012, )"
             },
             "Xamarin.Forms.PancakeView": {
               "target": "Package",
@@ -93,7 +93,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

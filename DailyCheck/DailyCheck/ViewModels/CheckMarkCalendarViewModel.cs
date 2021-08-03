@@ -211,7 +211,7 @@ namespace DailyCheck.ViewModels
                 List<DateTime> clickedDates = new List<DateTime>();
                 try
                 {
-                    var stocks = conn.Query<DailyClick>("SELECT * FROM `DailyStats` WHERE `Name` = ?", this.checkMark.Name);
+                    var stocks = conn.Query<DailyClick>("SELECT * FROM `DailyClick` WHERE `Name` = ?", this.checkMark.Name);
                     foreach (var i in stocks)
                     {
                         clickedDates.Add(new DateTime(i.Date.Year, i.Date.Month, i.Date.Day));
@@ -223,6 +223,7 @@ namespace DailyCheck.ViewModels
 
                 if (clickedDates.Count != 0)
                 {
+                    Constants.SendMessage(clickedDates.Count +  "");
                     DoneChecks = clickedDates;
                 }
             }

@@ -1,46 +1,38 @@
 {
   "version": 2,
-  "dgSpecHash": "pf6AEbzwSqF8Vf24N1xPIxA2Rc6e89zD1YyPXpATvyy1LLjLRVP2hqwSjDAddzpvUbt8jurWAXrH/YDZNmTU4w==",
+  "dgSpecHash": "/u9M19fwp+9eLp7q3bR7GRnDb9hXlCqv7olT9EQ9E1XljJmO6xkZunY3KlvO+8+XPILq7wZsBi//9T3cqbWVxQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\PC\\source\\repos\\DailyCheck\\DailyCheck\\DailyCheck\\DailyCheck.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\PC\\.nuget\\packages\\com.airbnb.xamarin.forms.lottie\\4.0.10\\com.airbnb.xamarin.forms.lottie.4.0.10.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\5.0.0\\microsoft.bcl.asyncinterfaces.5.0.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\plugin.localnotification\\8.0.2\\plugin.localnotification.8.0.2.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\sqlite-net-pcl\\1.7.335\\sqlite-net-pcl.1.7.335.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\sqlitepclraw.bundle_green\\2.0.3\\sqlitepclraw.bundle_green.2.0.3.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\sqlitepclraw.core\\2.0.3\\sqlitepclraw.core.2.0.3.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.0.3\\sqlitepclraw.lib.e_sqlite3.2.0.3.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\sqlitepclraw.provider.e_sqlite3\\2.0.3\\sqlitepclraw.provider.e_sqlite3.2.0.3.nupkg.sha512",
-    "C:\\Users\\PC\\.nuget\\packages\\syncfusion.licensing\\19.2.0.47\\syncfusion.licensing.19.2.0.47.nupkg.sha512",
-    "C:\\Users\\PC\\.nuget\\packages\\syncfusion.xamarin.core\\19.2.0.47\\syncfusion.xamarin.core.19.2.0.47.nupkg.sha512",
-    "C:\\Users\\PC\\.nuget\\packages\\syncfusion.xamarin.sfcalendar\\19.2.0.47\\syncfusion.xamarin.sfcalendar.19.2.0.47.nupkg.sha512",
-    "C:\\Users\\PC\\.nuget\\packages\\system.buffers\\4.4.0\\system.buffers.4.4.0.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\syncfusion.licensing\\19.2.0.49\\syncfusion.licensing.19.2.0.49.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\syncfusion.xamarin.core\\19.2.0.49\\syncfusion.xamarin.core.19.2.0.49.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\syncfusion.xamarin.sfcalendar\\19.2.0.49\\syncfusion.xamarin.sfcalendar.19.2.0.49.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\system.componentmodel\\4.3.0\\system.componentmodel.4.3.0.nupkg.sha512",
-    "C:\\Users\\PC\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\system.reflection.emit.ilgeneration\\4.7.0\\system.reflection.emit.ilgeneration.4.7.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\system.reflection.emit.lightweight\\4.7.0\\system.reflection.emit.lightweight.4.7.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\system.runtime\\4.3.0\\system.runtime.4.3.0.nupkg.sha512",
-    "C:\\Users\\PC\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.3\\system.runtime.compilerservices.unsafe.4.5.3.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\5.0.0\\system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\system.text.encodings.web\\5.0.1\\system.text.encodings.web.5.0.1.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\system.text.json\\5.0.2\\system.text.json.5.0.2.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
-    "C:\\Users\\PC\\.nuget\\packages\\xam.plugins.notifier\\3.0.1\\xam.plugins.notifier.3.0.1.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\xamarin.communitytoolkit\\1.2.0\\xamarin.communitytoolkit.1.2.0.nupkg.sha512",
-    "C:\\Users\\PC\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
-    "C:\\Users\\PC\\.nuget\\packages\\xamarin.forms\\5.0.0.2083\\xamarin.forms.5.0.0.2083.nupkg.sha512",
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\xamarin.forms.pancakeview\\2.3.0.759\\xamarin.forms.pancakeview.2.3.0.759.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1608",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Wykryta wersja pakietu jest poza ograniczeniami zależności: element Xamarin.CommunityToolkit 1.2.0 wymaga wersji Xamarin.Forms (>= 5.0.0.1874 && <= 5.0.0.2012), ale rozpoznano wersję Xamarin.Forms 5.0.0.2083.",
-      "libraryId": "Xamarin.Forms",
-      "targetGraphs": [
-        ".NETStandard,Version=v2.0"
-      ]
-    }
-  ]
+  "logs": []
 }
